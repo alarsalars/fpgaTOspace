@@ -1,0 +1,757 @@
+09:59:58 DEBUG : Logs will be stored at '/home/workshop/led_controller/IDE.log'.
+10:00:00 INFO  : Launching XSCT server: xsct -n  -interactive /home/workshop/led_controller/temp_xsdb_launch_script.tcl
+10:00:00 INFO  : Registering command handlers for Vitis TCF services
+10:00:02 INFO  : Platform repository initialization has completed.
+10:00:03 INFO  : XSCT server has started successfully.
+10:00:03 INFO  : plnx-install-location is set to ''
+10:00:03 INFO  : Successfully done setting XSCT server connection channel  
+10:00:04 INFO  : Successfully done setting workspace for the tool. 
+10:00:04 INFO  : Successfully done query RDI_DATADIR 
+10:04:27 INFO  : Result from executing command 'getProjects': design_1_wrapper
+10:04:27 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+10:04:28 WARN  : An unexpected exception occurred in the module 'platform project logging'
+10:04:29 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+10:04:45 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+11:11:38 INFO  : Result from executing command 'getProjects': design_1_wrapper
+11:11:38 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:11:42 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:12:01 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:13:15 INFO  : XRT server has started successfully on port '4351'
+11:13:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:18 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:13:18 INFO  : 'jtag frequency' command is executed.
+11:13:18 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:13:18 INFO  : Context for 'APU' is selected.
+11:13:19 INFO  : System reset is completed.
+11:13:22 INFO  : 'after 3000' command is executed.
+11:13:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:13:27 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:13:27 INFO  : Context for 'APU' is selected.
+11:13:28 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:13:28 INFO  : 'configparams force-mem-access 1' command is executed.
+11:13:28 INFO  : Context for 'APU' is selected.
+11:13:28 INFO  : Boot mode is read from the target.
+11:13:28 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:13:28 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:13:29 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:13:29 INFO  : 'set bp_13_29_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:13:31 INFO  : 'con -block -timeout 60' command is executed.
+11:13:31 INFO  : 'bpremove $bp_13_29_fsbl_bp' command is executed.
+11:13:31 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:13:31 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:13:31 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:13:31 INFO  : 'configparams force-mem-access 0' command is executed.
+11:13:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_13_29_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_13_29_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:13:31 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:13:32 INFO  : 'con' command is executed.
+11:13:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:13:32 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:20:25 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:21:42 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:21:44 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:25:45 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:26:04 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:26:06 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:26:22 INFO  : Disconnected from the channel tcfchan#3.
+11:26:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:22 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:26:22 INFO  : 'jtag frequency' command is executed.
+11:26:22 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:26:22 INFO  : Context for 'APU' is selected.
+11:26:23 INFO  : System reset is completed.
+11:26:26 INFO  : 'after 3000' command is executed.
+11:26:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:26:30 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:26:30 INFO  : Context for 'APU' is selected.
+11:26:30 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:26:30 INFO  : 'configparams force-mem-access 1' command is executed.
+11:26:30 INFO  : Context for 'APU' is selected.
+11:26:30 INFO  : Boot mode is read from the target.
+11:26:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:26:31 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:26:32 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:26:32 INFO  : 'set bp_26_32_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:26:33 INFO  : 'con -block -timeout 60' command is executed.
+11:26:33 INFO  : 'bpremove $bp_26_32_fsbl_bp' command is executed.
+11:26:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:26:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:26:34 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:26:34 INFO  : 'configparams force-mem-access 0' command is executed.
+11:26:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_26_32_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_26_32_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:26:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:26:34 INFO  : 'con' command is executed.
+11:26:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:26:34 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:27:46 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:27:56 INFO  : Disconnected from the channel tcfchan#6.
+11:27:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:27:56 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:27:56 INFO  : 'jtag frequency' command is executed.
+11:27:56 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:27:56 INFO  : Context for 'APU' is selected.
+11:27:57 INFO  : System reset is completed.
+11:28:00 INFO  : 'after 3000' command is executed.
+11:28:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:28:04 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:28:04 INFO  : Context for 'APU' is selected.
+11:28:04 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:28:04 INFO  : 'configparams force-mem-access 1' command is executed.
+11:28:04 INFO  : Context for 'APU' is selected.
+11:28:04 INFO  : Boot mode is read from the target.
+11:28:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:28:05 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:28:06 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:28:06 INFO  : 'set bp_28_6_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:28:06 INFO  : 'con -block -timeout 60' command is executed.
+11:28:06 INFO  : 'bpremove $bp_28_6_fsbl_bp' command is executed.
+11:28:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:28:06 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:28:07 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:28:07 INFO  : 'configparams force-mem-access 0' command is executed.
+11:28:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_28_6_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_28_6_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:28:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:28:07 INFO  : 'con' command is executed.
+11:28:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:28:07 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:28:52 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:29:08 INFO  : Disconnected from the channel tcfchan#7.
+11:29:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:29:09 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:29:09 INFO  : 'jtag frequency' command is executed.
+11:29:09 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:29:09 INFO  : Context for 'APU' is selected.
+11:29:09 INFO  : System reset is completed.
+11:29:12 INFO  : 'after 3000' command is executed.
+11:29:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:29:16 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:29:16 INFO  : Context for 'APU' is selected.
+11:29:16 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:29:16 INFO  : 'configparams force-mem-access 1' command is executed.
+11:29:16 INFO  : Context for 'APU' is selected.
+11:29:16 INFO  : Boot mode is read from the target.
+11:29:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:29:16 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:29:17 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:29:17 INFO  : 'set bp_29_17_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:29:18 INFO  : 'con -block -timeout 60' command is executed.
+11:29:18 INFO  : 'bpremove $bp_29_17_fsbl_bp' command is executed.
+11:29:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:29:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:29:18 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:29:18 INFO  : 'configparams force-mem-access 0' command is executed.
+11:29:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_29_17_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_29_17_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:29:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:29:19 INFO  : 'con' command is executed.
+11:29:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:29:19 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:31:16 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:31:18 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:31:28 INFO  : Disconnected from the channel tcfchan#8.
+11:31:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:31:28 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:31:28 INFO  : 'jtag frequency' command is executed.
+11:31:28 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:31:28 INFO  : Context for 'APU' is selected.
+11:31:29 INFO  : System reset is completed.
+11:31:32 INFO  : 'after 3000' command is executed.
+11:31:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:31:36 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:31:37 INFO  : Context for 'APU' is selected.
+11:31:37 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:31:37 INFO  : 'configparams force-mem-access 1' command is executed.
+11:31:37 INFO  : Context for 'APU' is selected.
+11:31:37 INFO  : Boot mode is read from the target.
+11:31:37 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:31:37 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:31:38 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:31:38 INFO  : 'set bp_31_38_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:31:39 INFO  : 'con -block -timeout 60' command is executed.
+11:31:39 INFO  : 'bpremove $bp_31_38_fsbl_bp' command is executed.
+11:31:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:31:39 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:31:39 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:31:39 INFO  : 'configparams force-mem-access 0' command is executed.
+11:31:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_31_38_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_31_38_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:31:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:31:39 INFO  : 'con' command is executed.
+11:31:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:31:39 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:32:03 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:32:05 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:32:37 INFO  : Result from executing command 'removePlatformRepo': 
+11:33:05 INFO  : Result from executing command 'getProjects': design_1_wrapper
+11:33:05 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:33:08 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:33:18 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:33:29 INFO  : Disconnected from the channel tcfchan#10.
+11:33:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:33:30 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:33:30 INFO  : 'jtag frequency' command is executed.
+11:33:30 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:33:30 INFO  : Context for 'APU' is selected.
+11:33:31 INFO  : System reset is completed.
+11:33:34 INFO  : 'after 3000' command is executed.
+11:33:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:33:37 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:33:37 INFO  : Context for 'APU' is selected.
+11:33:37 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:33:37 INFO  : 'configparams force-mem-access 1' command is executed.
+11:33:37 INFO  : Context for 'APU' is selected.
+11:33:37 INFO  : Boot mode is read from the target.
+11:33:37 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:33:37 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:33:39 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:33:39 INFO  : 'set bp_33_39_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:33:39 INFO  : 'con -block -timeout 60' command is executed.
+11:33:39 INFO  : 'bpremove $bp_33_39_fsbl_bp' command is executed.
+11:33:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:33:39 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:33:40 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:33:40 INFO  : 'configparams force-mem-access 0' command is executed.
+11:33:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_33_39_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_33_39_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:33:40 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:33:40 INFO  : 'con' command is executed.
+11:33:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:33:40 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:34:40 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:34:42 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:34:55 INFO  : Disconnected from the channel tcfchan#15.
+11:34:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:34:55 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:34:55 INFO  : 'jtag frequency' command is executed.
+11:34:55 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:34:55 INFO  : Context for 'APU' is selected.
+11:34:56 INFO  : System reset is completed.
+11:34:59 INFO  : 'after 3000' command is executed.
+11:34:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:35:02 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:35:02 INFO  : Context for 'APU' is selected.
+11:35:02 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:35:02 INFO  : 'configparams force-mem-access 1' command is executed.
+11:35:02 INFO  : Context for 'APU' is selected.
+11:35:02 INFO  : Boot mode is read from the target.
+11:35:02 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:35:03 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:35:04 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:35:04 INFO  : 'set bp_35_4_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:35:05 INFO  : 'con -block -timeout 60' command is executed.
+11:35:05 INFO  : 'bpremove $bp_35_4_fsbl_bp' command is executed.
+11:35:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:35:05 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:35:05 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:35:05 INFO  : 'configparams force-mem-access 0' command is executed.
+11:35:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_35_4_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_35_4_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:35:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:35:05 INFO  : 'con' command is executed.
+11:35:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:35:05 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:49:27 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:49:30 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:50:02 INFO  : Disconnected from the channel tcfchan#17.
+11:50:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:50:02 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:50:02 INFO  : 'jtag frequency' command is executed.
+11:50:02 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:50:02 INFO  : Context for 'APU' is selected.
+11:50:03 INFO  : System reset is completed.
+11:50:06 INFO  : 'after 3000' command is executed.
+11:50:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:50:11 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:50:11 INFO  : Context for 'APU' is selected.
+11:50:11 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:50:11 INFO  : 'configparams force-mem-access 1' command is executed.
+11:50:11 INFO  : Context for 'APU' is selected.
+11:50:11 INFO  : Boot mode is read from the target.
+11:50:11 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:50:11 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:50:13 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:50:13 INFO  : 'set bp_50_13_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:50:14 INFO  : 'con -block -timeout 60' command is executed.
+11:50:14 INFO  : 'bpremove $bp_50_13_fsbl_bp' command is executed.
+11:50:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:50:14 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:50:15 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:50:15 INFO  : 'configparams force-mem-access 0' command is executed.
+11:50:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_50_13_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_50_13_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:50:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:50:15 INFO  : 'con' command is executed.
+11:50:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:50:15 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:51:26 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:51:28 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:51:39 INFO  : Disconnected from the channel tcfchan#19.
+11:51:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:39 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:51:39 INFO  : 'jtag frequency' command is executed.
+11:51:39 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:51:39 INFO  : Context for 'APU' is selected.
+11:51:40 INFO  : System reset is completed.
+11:51:43 INFO  : 'after 3000' command is executed.
+11:51:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:51:47 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:51:47 INFO  : Context for 'APU' is selected.
+11:51:47 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:51:47 INFO  : 'configparams force-mem-access 1' command is executed.
+11:51:47 INFO  : Context for 'APU' is selected.
+11:51:47 INFO  : Boot mode is read from the target.
+11:51:47 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:51:47 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:51:49 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:51:49 INFO  : 'set bp_51_49_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:51:50 INFO  : 'con -block -timeout 60' command is executed.
+11:51:50 INFO  : 'bpremove $bp_51_49_fsbl_bp' command is executed.
+11:51:50 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:51:50 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:51:51 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:51:51 INFO  : 'configparams force-mem-access 0' command is executed.
+11:51:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_51_49_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_51_49_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:51:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:51:51 INFO  : 'con' command is executed.
+11:51:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:51:51 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:56:08 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:56:21 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:56:23 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:56:32 INFO  : Disconnected from the channel tcfchan#21.
+11:56:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:56:32 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:56:32 INFO  : 'jtag frequency' command is executed.
+11:56:32 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:56:32 INFO  : Context for 'APU' is selected.
+11:56:33 INFO  : System reset is completed.
+11:56:36 INFO  : 'after 3000' command is executed.
+11:56:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+11:56:40 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+11:56:40 INFO  : Context for 'APU' is selected.
+11:56:40 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:56:40 INFO  : 'configparams force-mem-access 1' command is executed.
+11:56:40 INFO  : Context for 'APU' is selected.
+11:56:40 INFO  : Boot mode is read from the target.
+11:56:40 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:56:41 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:56:42 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:56:42 INFO  : 'set bp_56_42_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:56:43 INFO  : 'con -block -timeout 60' command is executed.
+11:56:43 INFO  : 'bpremove $bp_56_42_fsbl_bp' command is executed.
+11:56:43 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:56:43 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:56:45 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:56:45 INFO  : 'configparams force-mem-access 0' command is executed.
+11:56:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_56_42_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_56_42_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:56:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:56:45 INFO  : 'con' command is executed.
+11:56:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:56:45 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+11:59:40 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+11:59:42 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+11:59:57 INFO  : Disconnected from the channel tcfchan#23.
+11:59:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:59:57 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+11:59:57 INFO  : 'jtag frequency' command is executed.
+11:59:57 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:59:57 INFO  : Context for 'APU' is selected.
+11:59:58 INFO  : System reset is completed.
+12:00:01 INFO  : 'after 3000' command is executed.
+12:00:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+12:00:04 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+12:00:04 INFO  : Context for 'APU' is selected.
+12:00:04 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+12:00:04 INFO  : 'configparams force-mem-access 1' command is executed.
+12:00:05 INFO  : Context for 'APU' is selected.
+12:00:05 INFO  : Boot mode is read from the target.
+12:00:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:00:05 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:00:06 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:00:06 INFO  : 'set bp_0_6_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:00:07 INFO  : 'con -block -timeout 60' command is executed.
+12:00:08 INFO  : 'bpremove $bp_0_6_fsbl_bp' command is executed.
+12:00:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:00:08 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:00:09 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:00:09 INFO  : 'configparams force-mem-access 0' command is executed.
+12:00:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_0_6_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_0_6_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:00:09 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:00:10 INFO  : 'con' command is executed.
+12:00:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:00:10 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+12:00:35 INFO  : Checking for BSP changes to sync application flags for project 'led_controller_sw'...
+12:00:37 ERROR : (XSDB Server)readelf: Error: '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/fsbl.elf': No such file
+
+12:00:47 INFO  : Disconnected from the channel tcfchan#25.
+12:00:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:00:47 INFO  : Jtag cable 'Avnet ZUBoard1CG 1234-oj1A' is selected.
+12:00:47 INFO  : 'jtag frequency' command is executed.
+12:00:47 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:00:47 INFO  : Context for 'APU' is selected.
+12:00:48 INFO  : System reset is completed.
+12:00:51 INFO  : 'after 3000' command is executed.
+12:00:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}' command is executed.
+12:00:56 INFO  : Device configured successfully with "/home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit"
+12:00:56 INFO  : Context for 'APU' is selected.
+12:00:56 INFO  : Hardware design and registers information is loaded from '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+12:00:56 INFO  : 'configparams force-mem-access 1' command is executed.
+12:00:56 INFO  : Context for 'APU' is selected.
+12:00:56 INFO  : Boot mode is read from the target.
+12:00:56 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:00:56 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:00:58 INFO  : The application '/home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:00:58 INFO  : 'set bp_0_58_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:00:58 INFO  : 'con -block -timeout 60' command is executed.
+12:00:58 INFO  : 'bpremove $bp_0_58_fsbl_bp' command is executed.
+12:00:58 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:00:58 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:01:00 INFO  : The application '/home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:01:00 INFO  : 'configparams force-mem-access 0' command is executed.
+12:01:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}
+fpga -file /home/workshop/led_controller/led_controller_sw/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_0_58_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_0_58_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/workshop/led_controller/led_controller_sw/Debug/led_controller_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:01:00 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:01:00 INFO  : 'con' command is executed.
+12:01:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:01:00 INFO  : Launch script is exported to file '/home/workshop/led_controller/led_controller_sw_system/_ide/scripts/systemdebugger_led_controller_sw_system_standalone.tcl'
+12:05:41 INFO  : Disconnected from the channel tcfchan#27.
