@@ -1,0 +1,10 @@
+00:26:26 **** Incremental Build of configuration Debug for project dma_zubaord_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 63390 C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_psu_cortexa53_0 C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/dma_zubaord_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/dma_zubaord_system/Debug/system.bif --bitstream C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/dma_zubaord/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/dma_zubaord/Debug/dma_zubaord.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/dma_zubaord/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen -arch zynqmp -image C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/dma_zubaord_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+00:26:36 Build Finished (took 9s.297ms)
+
