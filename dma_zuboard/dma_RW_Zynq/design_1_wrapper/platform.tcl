@@ -36,3 +36,5 @@ catch {bsp regenerate}
 platform generate -domains zynqmp_fsbl,zynqmp_pmufw 
 platform active {design_1_wrapper}
 platform generate -domains 
+platform active {design_1_wrapper}
+platform generate -domains 

@@ -24,9 +24,9 @@ set mode [expr [mrd -value 0xFF5E0200] & 0xf]
 targets -set -nocase -filter {name =~ "*R5*#0"}
 rst -processor
 dow C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
-set bp_17_47_fsbl_bp [bpadd -addr &XFsbl_Exit]
+set bp_57_27_fsbl_bp [bpadd -addr &XFsbl_Exit]
 con -block -timeout 60
-bpremove $bp_17_47_fsbl_bp
+bpremove $bp_57_27_fsbl_bp
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow C:/Users/TAlars/Documents/vivado_projects_tests/vipix/dma/dma_RW_Zynq/dma_zubaord/Debug/dma_zubaord.elf
