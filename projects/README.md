@@ -1,4 +1,5 @@
-# fpgaTOspace
- It contains all the work that I do in my free time (codes and projects)
+# Demos for various projects
 
- The Repo is under build, many projects will be uploaded soon......
+ This directory includes different projects ONLY with Xilinx (Vivado & Vitis).
+ Ttested with Avnet ZUBoard 1CG Development Board (https://www.xilinx.com/products/boards-and-kits/1-1pusyun.html)
+ Most of the projected used both PS and PL of the Zynq UltraScale+ MPSoC
