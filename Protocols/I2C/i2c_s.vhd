@@ -1,0 +1,16 @@
+---------------------------------------------------------------
+-- Title     uart receiver    
+-- Project       
+------------------
+-- File          
+-- Author    TAHA ALARS    
+-- Email         
+-- Organization  
+-- Created       
+------------------
+-- Simulator     
+-- Synthesis     
+------------------
+-- Description : 
+---------------------------------------------------------------
+-- Hierarchy: 
