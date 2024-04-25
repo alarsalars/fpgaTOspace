@@ -53,8 +53,6 @@ end invertor;
 
 architecture Behavioral of invertor is
 
--- SIGNAL counut : INTEGER := 0;
-
 SIGNAL reg_data : std_logic_vector(7 downto 0);
 SIGNAL reg : UNSIGNED(7 downto 0);
 begin
@@ -73,8 +71,7 @@ BEGIN
             IF (s_axis_valid = '1' AND m_axis_ready = '1') THEN
                 FOR i IN 0 to (data_width/8 - 1) LOOP
                     reg_data <= s_axis_data(i*8+7 downto i*8);
-                    reg <= TO_UNSIGNED(reg_data,reg_data'length);
-                --   reg <= 255 - TO_UNSIGNED(reg_data,reg_data'length);
+                    reg <= 255 - TO_UNSIGNED(reg_data,reg_data'length);
                     m_axis_data(i*8-7 DOWNTO i*8)   <= std_logic_vector(reg);
                 END LOOP;
             END IF;
