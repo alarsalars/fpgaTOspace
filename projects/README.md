@@ -1,6 +1,6 @@
 # Demos for various projects
 
- This directory includes different projects ONLY with Xilinx (Vivado & Vitis).
+ This directory includes different projects ONLY with Xilinx (Vivado & Vitis) vivado and Vitis version is 2022.2 on windows.
  
  Tested with Avnet ZUBoard 1CG Development Board (https://www.xilinx.com/products/boards-and-kits/1-1pusyun.html).
  
