@@ -1,0 +1,33 @@
+timestamp=[2024-04-29 13:08:30], mode=WORKBENCH_START, duration=0:00:06.300, duration_ms=6300, data={}
+timestamp=[2024-04-29 13:08:31], mode=WORKBENCH_UI_INIT, duration=0:00:00.488, duration_ms=488, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-04-29 13:08:33], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.134, duration_ms=1134, data={}
+timestamp=[2024-04-29 13:14:31], mode=APP_CREATION, duration=0:00:36.981, duration_ms=36981, data={name=sd_card_sw, project_type=sdk, os=standalone, processor=psu_cortexa53, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2024-04-29 15:34:08], mode=PLATFORM_GENERATION, duration=0:01:27.349, duration_ms=87349, data={name=design_1_wrapper}
+timestamp=[2024-04-29 15:34:09], mode=BUILD, duration=0:00:00.690, duration_ms=690, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 16:04:28], mode=BUILD, duration=0:00:01.534, duration_ms=1534, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 16:04:39], mode=BUILD, duration=0:00:09.574, duration_ms=9574, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 14:27:17], mode=WORKBENCH_START, duration=0:00:08.443, duration_ms=8443, data={}
+timestamp=[2024-04-30 14:27:18], mode=WORKBENCH_UI_INIT, duration=0:00:01.225, duration_ms=1225, data={editors_count=13, platform_editors_count=10, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,sd_card_sw,sd_card_sw_system}
+timestamp=[2024-04-30 14:27:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.258, duration_ms=1258, data={}
+timestamp=[2024-04-30 14:40:37], mode=BUILD, duration=0:00:00.700, duration_ms=700, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 14:40:48], mode=BUILD, duration=0:00:09.806, duration_ms=9806, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 14:41:26], mode=BUILD, duration=0:00:01.763, duration_ms=1763, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 14:41:39], mode=BUILD, duration=0:00:12.551, duration_ms=12551, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 14:47:40], mode=BUILD, duration=0:00:01.448, duration_ms=1448, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 14:47:50], mode=BUILD, duration=0:00:09.030, duration_ms=9030, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 15:07:09], mode=BUILD, duration=0:00:01.595, duration_ms=1595, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 15:07:18], mode=BUILD, duration=0:00:09.073, duration_ms=9073, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 16:56:58], mode=BUILD, duration=0:00:01.866, duration_ms=1866, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 16:57:10], mode=BUILD, duration=0:00:11.348, duration_ms=11348, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 16:57:35], mode=BUILD, duration=0:00:01.464, duration_ms=1464, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 16:57:45], mode=BUILD, duration=0:00:09.534, duration_ms=9534, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:03:47], mode=BUILD, duration=0:00:01.588, duration_ms=1588, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:03:57], mode=BUILD, duration=0:00:09.245, duration_ms=9245, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:38:21], mode=BUILD, duration=0:00:00.497, duration_ms=497, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:39:51], mode=BUILD, duration=0:00:01.713, duration_ms=1713, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:40:02], mode=BUILD, duration=0:00:09.634, duration_ms=9634, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:40:08], mode=BUILD, duration=0:00:00.463, duration_ms=463, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:40:17], mode=BUILD, duration=0:00:01.451, duration_ms=1451, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:40:27], mode=BUILD, duration=0:00:09.217, duration_ms=9217, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:40:59], mode=BUILD, duration=0:00:01.552, duration_ms=1552, data={name=sd_card_sw, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 17:41:09], mode=BUILD, duration=0:00:09.402, duration_ms=9402, data={name=sd_card_sw_system, configuration=Debug, clean_build=false}

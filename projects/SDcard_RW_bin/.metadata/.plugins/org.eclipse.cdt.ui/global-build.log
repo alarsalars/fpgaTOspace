@@ -1,0 +1,42 @@
+Nothing to build in platform 'design_1_wrapper'
+
+17:40:58 **** Incremental Build of configuration Debug for project sd_card_sw ****
+make all 
+'Building file: ../src/sd_wr.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sd_wr.o" -IC:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/sd_wr.d" -MT"src/sd_wr.o" -o "src/sd_wr.o" "../src/sd_wr.c"
+../src/sd_wr.c: In function 'main':
+../src/sd_wr.c:34:35: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   34 |     Status = ReadFile("boot.bin", (u32)imageBuffer);
+      |                                   ^
+../src/sd_wr.c:42:50: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   42 |     Status = WriteFile("bootcp2.bin", (3101640), (u32)imageBuffer);
+      |                                                  ^
+../src/sd_wr.c: In function 'ReadFile':
+../src/sd_wr.c:104:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  104 |     rc = f_read(&fil, (void*) DestinationAddress, file_size, &br); // Read data from the file
+      |                       ^
+../src/sd_wr.c: In function 'WriteFile':
+../src/sd_wr.c:129:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  129 |     rc = f_write(&fil, (const void*)SourceAddress, size, &btw); // Write data to the file
+      |                        ^
+'Finished building: ../src/sd_wr.c'
+' '
+'Building target: sd_card_sw.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "sd_card_sw.elf"  ./src/sd_wr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sd_card_sw.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size sd_card_sw.elf  |tee "sd_card_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  66424	   2116	3126208	3194748	 30bf7c	sd_card_sw.elf
+'Finished building: sd_card_sw.elf.size'
+' '
+17:41:00 **** Incremental Build of configuration Debug for project sd_card_sw_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 63375 C:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_psu_cortexa53_0 C:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/sd_card_sw_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/sd_card_sw_system/Debug/system.bif --bitstream C:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/sd_card_sw/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/sd_card_sw/Debug/sd_card_sw.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/sd_card_sw/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen -arch zynqmp -image C:/Users/TAlars/Documents/vivado_projects_tests/vipix/sd_card/sd_card_sw_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
