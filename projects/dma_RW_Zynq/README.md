@@ -1,4 +1,4 @@
-#Read and write Zynq and DMA on ZUboard 1CG
+# Read and write Zynq and DMA on ZUboard 1CG
 
 This project used to write and read from DDR by DMA and ZYNQ ultrascale+ SoC, ZUboard used in this test
 I will need to add some extra features to the codes and some comments coming soon............
