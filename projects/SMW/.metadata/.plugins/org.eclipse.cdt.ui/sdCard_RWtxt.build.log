@@ -1,0 +1,29 @@
+23:38:21 **** Incremental Build of configuration Debug for project sdCard_RWtxt ****
+make all 
+'Building target: sdCard_RWtxt.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/TAlars/Documents/vivado_projects_tests/vipix/sdCard_rw_txt/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "sdCard_RWtxt.elf"  ./src/sdCard.o ./src/xadcTest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: ./src/sdCard.o: in function `SD_Init':
+C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:10: undefined reference to `f_mount'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: ./src/sdCard.o: in function `SD_Eject':
+C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:22: undefined reference to `f_mount'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: ./src/sdCard.o: in function `ReadFile':
+C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:40: undefined reference to `f_lseek'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:45: undefined reference to `f_read'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: ./src/sdCard.o: in function `closeFile':
+C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:56: undefined reference to `f_close'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: ./src/sdCard.o: in function `openFile':
+C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:70: undefined reference to `f_open'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:72: undefined reference to `f_open'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:74: undefined reference to `f_unlink'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:75: undefined reference to `f_open'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:79: undefined reference to `f_open'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:81: undefined reference to `f_open'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:84: undefined reference to `f_lseek'
+c:/xilinx/vitis/2022.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/11.2.0/real-ld.exe: ./src/sdCard.o: in function `writeFile':
+C:\Users\TAlars\Documents\vivado_projects_tests\vipix\sdCard_rw_txt\sdCard_RWtxt\Debug/../src/sdCard.c:97: undefined reference to `f_write'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: sdCard_RWtxt.elf] Error 1
+
+23:38:22 Build Finished (took 640ms)
+

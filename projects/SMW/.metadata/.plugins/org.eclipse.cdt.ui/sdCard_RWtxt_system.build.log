@@ -1,0 +1,8 @@
+23:12:32 **** Clean-only build of configuration Debug for project sdCard_RWtxt_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+23:12:32 Build Finished (took 382ms)
+

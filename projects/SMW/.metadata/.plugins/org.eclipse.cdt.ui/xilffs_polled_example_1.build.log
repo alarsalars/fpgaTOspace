@@ -1,0 +1,13 @@
+23:34:18 **** Build of configuration Debug for project xilffs_polled_example_1 ****
+make all 
+'Building file: ../src/xilffs_polled_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xilffs_polled_example.o" -IC:/Users/TAlars/Documents/vivado_projects_tests/vipix/sdCard_rw_txt/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xilffs_polled_example.d" -MT"src/xilffs_polled_example.o" -o "src/xilffs_polled_example.o" "../src/xilffs_polled_example.c"
+../src/xilffs_polled_example.c:47:10: fatal error: xsdps.h: No such file or directory
+   47 | #include "xsdps.h"              /* SD device driver */
+      |          ^~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/xilffs_polled_example.o] Error 1
+
+23:34:18 Build Finished (took 360ms)
+

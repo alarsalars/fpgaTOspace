@@ -1,0 +1,39 @@
+00:59:51 **** Incremental Build of configuration Debug for project sd_txt ****
+make all 
+'Building file: ../src/sd_tmp.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sd_tmp.o" -IC:/Users/TAlars/Documents/vivado_projects_tests/vipix/sdCard_rw_txt/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/sd_tmp.d" -MT"src/sd_tmp.o" -o "src/sd_tmp.o" "../src/sd_tmp.c"
+../src/sd_tmp.c: In function 'ReadFile':
+../src/sd_tmp.c:47:26: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   47 |         rc = f_read(fil, (void*) DestinationAddress, file_size, &br);
+      |                          ^
+../src/sd_tmp.c:38:17: warning: unused variable 'finfo' [-Wunused-variable]
+   38 |         FILINFO finfo;
+      |                 ^~~~~
+../src/sd_tmp.c: In function 'openFile':
+../src/sd_tmp.c:85:17: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+   85 |                 else
+      |                 ^~~~
+../src/sd_tmp.c:87:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+   87 |                         rc = f_lseek(&fil,file_size);
+      |                         ^~
+../src/sd_tmp.c: In function 'writeFile':
+../src/sd_tmp.c:100:27: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  100 |         rc = f_write(fptr,(const void*)SourceAddress,size,&btw);
+      |                           ^
+'Finished building: ../src/sd_tmp.c'
+' '
+'Building target: sd_txt.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/TAlars/Documents/vivado_projects_tests/vipix/sdCard_rw_txt/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "sd_txt.elf"  ./src/SMWTest.o ./src/sd_tmp.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sd_txt.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size sd_txt.elf  |tee "sd_txt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157248	   7796	  25664	 190708	  2e8f4	sd_txt.elf
+'Finished building: sd_txt.elf.size'
+' '
+
+00:59:53 Build Finished (took 1s.564ms)
+
