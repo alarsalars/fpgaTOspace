@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="arm_side" location="C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/arm_side" platform="C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm" platformUID="xilinx:zuboard_1cg::0.0(custom)" systemProject="multi_proc_sw" sysConfig="design_1_wrapper" runtime="C/C++" cpu="standalone_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="fb24b52200639c08722a5850415ee403">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.41458330" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.78136234" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

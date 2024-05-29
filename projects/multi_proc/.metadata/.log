@@ -1,0 +1,702 @@
+!SESSION 2024-05-29 14:07:20.906 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\TAlars\Documents\vivado_projects_tests\vipix\multi_proc\.metadata\.bak_0.log
+Created Time: 2024-05-29 17:04:50.423
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.430
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_0 C_NUM_OF_COUNTERS], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.481
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_0 C_NUM_OF_COUNTERS], Result: [null, 10]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.490
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.497
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.507
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_1 C_S_AXI_BASEADDR], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.513
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_1 C_S_AXI_BASEADDR], Result: [null, 0xFFA00000]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.521
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_1 C_ENABLE_PROFILE], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.530
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_1 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.531
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_1 C_ENABLE_ADVANCED], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.541
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_1 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.546
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_1 C_NUM_OF_COUNTERS], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.557
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_1 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.562
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.574
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.579
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_2 C_S_AXI_BASEADDR], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.587
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_2 C_S_AXI_BASEADDR], Result: [null, 0xFFA10000]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.590
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_2 C_ENABLE_PROFILE], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.595
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_2 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.605
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_2 C_ENABLE_ADVANCED], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.611
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_2 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.611
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_2 C_NUM_OF_COUNTERS], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.624
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_2 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.627
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.635
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.648
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_5 C_S_AXI_BASEADDR], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.657
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_5 C_S_AXI_BASEADDR], Result: [null, 0xFD490000]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.662
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_5 C_ENABLE_PROFILE], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.670
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_5 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.676
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_5 C_ENABLE_ADVANCED], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.683
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_5 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.686
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_5 C_NUM_OF_COUNTERS], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.695
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa psu_apm_5 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.700
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa zynq_ultra_ps_e_0 PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.711
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa zynq_ultra_ps_e_0 PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ], Result: [null, 250.000000]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:50.716
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:53.890
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:53.893
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.399
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.415
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.431
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.431
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.457
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.693
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.709
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.717
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.750
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.874
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.880
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.890
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.912
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.924
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.937
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.945
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.969
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.977
+!MESSAGE XSCT Command: [version -server], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.985
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.990
+!MESSAGE XSCT Command: [version], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:54.993
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.008
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.018
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.026
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.046
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.057
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Avnet ZUBoard1CG 1234-oj1A" && level == 0}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.075
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Avnet ZUBoard1CG 1234-oj1A" && level == 0}], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.083
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.091
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.099
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.197
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.207
+!MESSAGE XSCT Command: [source C:/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.221
+!MESSAGE XSCT command with result: [source C:/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.224
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.254
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.262
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.872
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:55.880
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:58.895
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:58.922
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:58.931
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:58.940
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:58.964
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:58.980
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:58.992
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:58.996
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.007
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.012
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.020
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.030
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.036
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.045
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.077
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.088
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.093
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-ZUBoard1CG-1234-oj1A-04688093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.102
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 3], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.109
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 3], Result: [null, jsn-ZUBoard1CG-1234-oj1A-5ba00477-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.182
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.249
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:04:59.255
+!MESSAGE XSCT Command: [fpga -file C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/mb_side/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:01.176
+!MESSAGE XSCT command with result: [fpga -file C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/mb_side/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:01.210
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:01.240
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:01.247
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.026
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.040
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.043
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.056
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.068
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.076
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.100
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.109
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.133
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.141
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.213
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.273
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.296
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.307
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.501
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:02.510
+!MESSAGE XSCT Command: [dow C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:03.528
+!MESSAGE XSCT command with result: [dow C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:03.540
+!MESSAGE XSCT Command: [set bp_5_3_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:04.112
+!MESSAGE XSCT command with result: [set bp_5_3_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 0]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:04.119
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:05.181
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:05.192
+!MESSAGE XSCT Command: [bpremove $bp_5_3_fsbl_bp], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:05.292
+!MESSAGE XSCT command with result: [bpremove $bp_5_3_fsbl_bp], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:05.301
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:05.316
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:05.325
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:05:05.332
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-29: Launching SystemDebugger_multi_proc_sw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-05-29 17:05:05.569
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-05-29 17:05:05.576
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-05-29 17:06:37.584
+!MESSAGE Resource data url:bundleentry://27.fwk1160974186/resources/zynq_mp/ct_in.properties
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-05-29 17:06:37.592
+!MESSAGE Resource data url:bundleentry://27.fwk1160974186/resources/zynq_mp/ct_out.properties
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:02.698
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-386
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:02.723
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-386
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.256
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.277
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.282
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.533
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.549
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.569
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.585
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.600
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.616
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.631
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.631
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.657
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.726
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.741
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.741
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.757
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.773
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.788
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.788
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.804
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.819
+!MESSAGE XSCT Command: [version -server], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.819
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.835
+!MESSAGE XSCT Command: [version], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.835
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.851
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.866
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.866
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.882
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.898
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Avnet ZUBoard1CG 1234-oj1A" && level == 0}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.913
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Avnet ZUBoard1CG 1234-oj1A" && level == 0}], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.929
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.929
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.929
+!MESSAGE XSCT Command: [source C:/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.945
+!MESSAGE XSCT command with result: [source C:/Xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.945
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.961
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:06.977
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:07.243
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:07.243
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:10.269
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:10.303
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:10.314
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:10.316
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:10.331
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:10.331
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:10.364
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-ZUBoard1CG-1234-oj1A-04688093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:10.379
+!MESSAGE XSCT Command: [fpga -file C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/mb_side/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:12.103
+!MESSAGE XSCT command with result: [fpga -file C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/mb_side/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:12.133
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:12.181
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:12.181
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.483
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, design_1_wrapper_5]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.483
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.499
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.499
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.514
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Avnet ZUBoard1CG 1234-oj1A]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.514
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.530
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Avnet ZUBoard1CG 1234-oj1A" && level==1}], Result: [null,      2  xczu1 (idcode 04688093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.546
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.561
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.561
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.577
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.577
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.593
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.593
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.734
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:18.749
+!MESSAGE XSCT Command: [dow C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:19.635
+!MESSAGE XSCT command with result: [dow C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:19.635
+!MESSAGE XSCT Command: [set bp_16_19_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:19.730
+!MESSAGE XSCT command with result: [set bp_16_19_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 1]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:19.730
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:20.803
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:20.815
+!MESSAGE XSCT Command: [bpremove $bp_16_19_fsbl_bp], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:20.846
+!MESSAGE XSCT command with result: [bpremove $bp_16_19_fsbl_bp], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:20.846
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:20.863
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:20.870
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:16:20.884
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-33: Launching SystemDebugger_multi_proc_sw_1
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-05-29 17:16:20.982
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-05-29 17:16:20.982
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:53:38.954
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-452
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-29 17:53:38.954
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-452

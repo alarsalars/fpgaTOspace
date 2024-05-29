@@ -1,0 +1,6 @@
+15:40:35 **** Incremental Build of configuration Debug for project arm_side ****
+make all 
+make: Nothing to be done for 'all'.
+
+15:40:36 Build Finished (took 225ms)
+

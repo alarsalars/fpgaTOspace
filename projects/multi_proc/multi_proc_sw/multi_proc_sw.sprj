@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="multi_proc_sw" platform="C:/Users/TAlars/Documents/vivado_projects_tests/vipix/multi_proc/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm" platformUID="xilinx:zuboard_1cg::0.0(custom)" sysConfig="design_1_wrapper" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1689767055">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="mb_side" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Debug"/>
+      <applications name="arm_side" domainName="standalone_psu_cortexa53_0" domainPrettyName="standalone_psu_cortexa53_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1359567241">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="mb_side" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Release"/>
+      <applications name="arm_side" domainName="standalone_psu_cortexa53_0" domainPrettyName="standalone_psu_cortexa53_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>
