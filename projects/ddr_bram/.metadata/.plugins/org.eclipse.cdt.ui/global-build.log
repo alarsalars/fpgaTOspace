@@ -1,0 +1,27 @@
+Nothing to build in platform 'design_1_wrapper'
+
+01:12:56 **** Incremental Build of configuration Debug for project bram_ddr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 32 Bit gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -march=armv7-a -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bram_ddr.elf'
+'Invoking: ARM v8 32 Bit gcc linker'
+arm-none-eabi-gcc -march=armv7-a -mfpu=vfpv3 -mfloat-abi=hard -Wl,-T -Wl,../src/lscript.ld -LC:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "bram_ddr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bram_ddr.elf'
+' '
+'Invoking: ARM v8 32 Bit Print Size'
+arm-none-eabi-size bram_ddr.elf  |tee "bram_ddr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32454	   2264	  23120	  57838	   e1ee	bram_ddr.elf
+'Finished building: bram_ddr.elf.size'
+' '
+01:12:58 **** Incremental Build of configuration Debug for project memory_access ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 60498 C:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_psu_cortexa53_0 C:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/memory_access/Debug/system.bif
+sdcard_gen --xpfm C:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/memory_access/Debug/system.bif --bitstream C:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/bram_ddr/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/bram_ddr/Debug/bram_ddr.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/bram_ddr/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen -arch zynqmp -image C:/Users/TAlars/Documents/vivado_projects_tests/vipix/bram/memory_access/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

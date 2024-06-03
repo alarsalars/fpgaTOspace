@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xparameters.h"
+#include "string.h"
+
+int addr = XPAR_PS7_DDR_0_S_AXI_BASEADDR + 0x00600000;
+int arin[50];
+int arout[50];
+
+int main()
+{
+    init_platform();
+
+
+////////////////////Method 1 ////////////////////////////
+    /*
+    for(int i = 0 ; i < 50 ; i++)
+    {
+    	Xil_Out32(addr + 4*i,5*i);
+    }
+
+
+    for(int i = 0 ; i < 50 ; i++)
+    {
+    	int temp = Xil_In32(addr + 4*i);
+    	xil_printf("Value read : %0d\n",temp);
+    }
+
+	*/
+
+
+
+////////////////////Method 2 ////////////////////////////
+
+    for(int i = 0 ; i < 50 ; i++)
+    {
+    	arin[i] = 5*i;
+    }
+
+
+    memcpy(addr,arin,50*sizeof(int));//destination addr, source addr, no. of sample
+    memcpy(arout,addr,50*sizeof(int));
+
+    for(int i = 0 ; i < 50 ; i++)
+    {
+    	int temp = arout[i];
+    	xil_printf("Value read : %0d\n",temp);
+    }
+
+
+    cleanup_platform();
+    return 0;
+}
