@@ -1,6 +1,7 @@
 
 -------------------------------------------------------
 ------------ Reference Concept @ Kumar Khandagle  -------------
+------------ Coded by Taha Alars
 -------------------------------------------------------
 -- Simple Processor, consider all the inputs are ports for simpilicity purposes in real immpememntation will be buses with memory
 -- Register bit layout:
