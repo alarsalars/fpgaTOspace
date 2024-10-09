@@ -1,0 +1,33 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'talars' on host 'it05676' (Windows NT_amd64 version 6.2) on Wed Oct 09 23:15:46 +0200 2024
+INFO: [HLS 200-10] In directory 'C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/wb_s_uart_fd'
+Sourcing Tcl script 'C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/wb_s_uart_fd/wb_s_uart_fd/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/wb_s_uart_fd/wb_s_uart_fd/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project wb_s_uart_fd 
+INFO: [HLS 200-10] Opening project 'C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/wb_s_uart_fd/wb_s_uart_fd'.
+INFO: [HLS 200-1510] Running: set_top top 
+INFO: [HLS 200-1510] Running: add_files wb_s_uart_fd/source/top.cpp 
+INFO: [HLS 200-10] Adding design file 'wb_s_uart_fd/source/top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files wb_s_uart_fd/source/top.h 
+INFO: [HLS 200-10] Adding design file 'wb_s_uart_fd/source/top.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb wb_s_uart_fd/source/top_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'wb_s_uart_fd/source/top_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb wb_s_uart_fd/source/top_tb.h 
+INFO: [HLS 200-10] Adding test bench file 'wb_s_uart_fd/source/top_tb.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/wb_s_uart_fd/wb_s_uart_fd/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+Running Dispatch Server on port: 54188
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.991 seconds; current allocated memory: 0.297 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 24.177 seconds; peak allocated memory: 1.034 GB.

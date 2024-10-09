@@ -1,0 +1,49 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'talars' on host 'it05676' (Windows NT_amd64 version 6.2) on Wed Oct 09 10:13:09 +0200 2024
+INFO: [HLS 200-10] In directory 'C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS'
+Sourcing Tcl script 'C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project prbs_7_taps 
+INFO: [HLS 200-10] Opening project 'C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps'.
+INFO: [HLS 200-1510] Running: set_top main_func 
+INFO: [HLS 200-1510] Running: add_files prbs_7_taps/source/prbs.h 
+INFO: [HLS 200-10] Adding design file 'prbs_7_taps/source/prbs.h' to the project
+INFO: [HLS 200-1510] Running: add_files prbs_7_taps/source/prbs.cpp 
+INFO: [HLS 200-10] Adding design file 'prbs_7_taps/source/prbs.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb prbs_7_taps/source/prbs_tb.h -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'prbs_7_taps/source/prbs_tb.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb prbs_7_taps/source/prbs_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'prbs_7_taps/source/prbs_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs 
+Running Dispatch Server on port: 61994
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1397.434 ; gain = 122.332
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  9 10:13:55 2024...
+INFO: [HLS 200-802] Generated output file prbs_7_taps/ip_prbs/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 27.628 seconds; current allocated memory: 6.629 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 50.678 seconds; peak allocated memory: 1.041 GB.

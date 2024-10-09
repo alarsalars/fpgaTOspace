@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln1019_fu_139_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1019" VARIABLE="icmp_ln1019" MODULE="top" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln47_fu_151_p2" SOURCE="wb_s_uart_fd/source/top.cpp:47" VARIABLE="and_ln47" MODULE="top" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln47_1_fu_157_p2" SOURCE="wb_s_uart_fd/source/top.cpp:47" VARIABLE="and_ln47_1" MODULE="top" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln52_fu_163_p2" SOURCE="wb_s_uart_fd/source/top.cpp:52" VARIABLE="xor_ln52" MODULE="top" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln52_fu_169_p2" SOURCE="wb_s_uart_fd/source/top.cpp:52" VARIABLE="and_ln52" MODULE="top" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="next_state_fu_175_p3" SOURCE="wb_s_uart_fd/source/top.cpp:52" VARIABLE="next_state" MODULE="top" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

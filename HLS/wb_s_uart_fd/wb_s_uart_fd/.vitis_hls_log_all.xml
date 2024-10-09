@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'top/wb_in' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="wb_s_uart_fd" solutionName="solution1" date="2024-10-09T22:00:43.205+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'state' is power-on initialization." projectName="wb_s_uart_fd" solutionName="solution1" date="2024-10-09T22:00:43.185+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'uart_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="wb_s_uart_fd" solutionName="solution1" date="2024-10-09T22:00:43.149+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'ack' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="wb_s_uart_fd" solutionName="solution1" date="2024-10-09T22:00:43.096+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'tx' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="wb_s_uart_fd" solutionName="solution1" date="2024-10-09T22:00:43.063+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
