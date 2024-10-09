@@ -1,0 +1,128 @@
+
+
+================================================================
+== Vitis HLS Report for 'main_func'
+================================================================
+* Date:           Wed Oct  9 10:12:42 2024
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        prbs_7_taps
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.287 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.28>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specpipeline_ln59 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [prbs_7_taps/source/prbs.cpp:59]   --->   Operation 2 'specpipeline' 'specpipeline_ln59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%spectopmodule_ln57 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [prbs_7_taps/source/prbs.cpp:57]   --->   Operation 3 'spectopmodule' 'spectopmodule_ln57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln57 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0" [prbs_7_taps/source/prbs.cpp:57]   --->   Operation 4 'specinterface' 'specinterface_ln57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %in_r"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %in_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %out_r"   --->   Operation 7 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %out_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %compare"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %compare, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%in_r_read = read i1 @_ssdm_op_Read.ap_none.i1, i1 %in_r" [prbs_7_taps/source/prbs.cpp:57]   --->   Operation 11 'read' 'in_r_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%out_func1 = call i1 @first_func, i7 %lfsr_shift_V_1" [prbs_7_taps/source/prbs.cpp:70]   --->   Operation 12 'call' 'out_func1' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%call_ret = call i2 @second_func, i1 %in_r_read, i7 %lfsr_shift_V" [prbs_7_taps/source/prbs.cpp:73]   --->   Operation 13 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 14 [1/1] (0.00ns) (grouped into LUT with out node xor_ln74)   --->   "%out_from_func2 = extractvalue i2 %call_ret" [prbs_7_taps/source/prbs.cpp:73]   --->   Operation 14 'extractvalue' 'out_from_func2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns) (grouped into LUT with out node xor_ln74)   --->   "%out_from_func1 = extractvalue i2 %call_ret" [prbs_7_taps/source/prbs.cpp:73]   --->   Operation 15 'extractvalue' 'out_from_func1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.28ns) (out node of the LUT)   --->   "%xor_ln74 = xor i1 %out_from_func1, i1 %out_from_func2" [prbs_7_taps/source/prbs.cpp:74]   --->   Operation 16 'xor' 'xor_ln74' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_none.i1P0A, i1 %compare, i1 %xor_ln74" [prbs_7_taps/source/prbs.cpp:74]   --->   Operation 17 'write' 'write_ln74' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%write_ln75 = write void @_ssdm_op_Write.ap_none.i1P0A, i1 %out_r, i1 %out_func1" [prbs_7_taps/source/prbs.cpp:75]   --->   Operation 18 'write' 'write_ln75' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln77 = ret" [prbs_7_taps/source/prbs.cpp:77]   --->   Operation 19 'ret' 'ret_ln77' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.287ns
+The critical path consists of the following:
+	wire read operation ('in', prbs_7_taps/source/prbs.cpp:57) on port 'in_r' (prbs_7_taps/source/prbs.cpp:57) [15]  (0 ns)
+	'call' operation ('call_ret', prbs_7_taps/source/prbs.cpp:73) to 'second_func' [17]  (0 ns)
+	'xor' operation ('xor_ln74', prbs_7_taps/source/prbs.cpp:74) [20]  (0.287 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

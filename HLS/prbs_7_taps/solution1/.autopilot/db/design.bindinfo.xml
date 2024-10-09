@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="bit_xor_fu_34_p2" SOURCE="prbs_7_taps/source/prbs.cpp:21" VARIABLE="bit_xor" MODULE="first_func" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="bit_xor_fu_46_p2" SOURCE="prbs_7_taps/source/prbs.cpp:44" VARIABLE="bit_xor" MODULE="second_func" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="compare" SOURCE="prbs_7_taps/source/prbs.cpp:74" VARIABLE="xor_ln74" MODULE="main_func" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

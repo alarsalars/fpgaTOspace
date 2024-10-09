@@ -1,0 +1,40 @@
+In file included from prbs_7_taps/source/prbs.cpp:5:
+In file included from prbs_7_taps/source/prbs.h:3:
+In file included from C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int.h:12:
+C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:678:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=and_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:692:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=or_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:706:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xor_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+prbs_7_taps/source/prbs.cpp:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=first_func_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+prbs_7_taps/source/prbs.cpp:32:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=second_func_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/solution1/csynth.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=name=main_func_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=main_func
+        ^
+C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/solution1/directives.tcl:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=name=main_func_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=main_func
+        ^
+prbs_7_taps/source/prbs.cpp:59:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+prbs_7_taps/source/prbs.cpp:60:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=ap_none port=in_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_none port=in
+        ^
+prbs_7_taps/source/prbs.cpp:61:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=ap_none port=out_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_none port=out
+        ^
+prbs_7_taps/source/prbs.cpp:62:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=ap_none port=compare_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_none port=compare
+        ^
+prbs_7_taps/source/prbs.cpp:63:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_ctrl_none port=return
+        ^
+12 warnings generated.

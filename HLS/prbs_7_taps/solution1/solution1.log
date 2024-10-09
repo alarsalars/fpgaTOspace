@@ -1,0 +1,1289 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.101 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-10] Analyzing design file 'lfsr_7_taps/source/lfsr.cpp' ... 
+ERROR: [HLS 207-812] 'basics.h' file not found (lfsr_7_taps/source/lfsr.cpp:5:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.385 seconds; current allocated memory: 0.258 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 22.176 seconds; peak allocated memory: 1.035 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.076 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-10] Analyzing design file 'lfsr_7_taps/source/lfsr.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.102 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi7ELb0EEC2EDq7_j' into 'ap_int_base<7, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_uint<7>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1669:558)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3098)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3096)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1498:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'first_func()' (lfsr_7_taps/source/lfsr.cpp:24:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (lfsr_7_taps/source/lfsr.cpp:23:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (lfsr_7_taps/source/lfsr.cpp:16:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (lfsr_7_taps/source/lfsr.cpp:16:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (lfsr_7_taps/source/lfsr.cpp:16:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (lfsr_7_taps/source/lfsr.cpp:15:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (lfsr_7_taps/source/lfsr.cpp:15:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (lfsr_7_taps/source/lfsr.cpp:15:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'second_func(bool, bool&)' (lfsr_7_taps/source/lfsr.cpp:47:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (lfsr_7_taps/source/lfsr.cpp:46:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (lfsr_7_taps/source/lfsr.cpp:39:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (lfsr_7_taps/source/lfsr.cpp:39:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (lfsr_7_taps/source/lfsr.cpp:39:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (lfsr_7_taps/source/lfsr.cpp:38:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (lfsr_7_taps/source/lfsr.cpp:38:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (lfsr_7_taps/source/lfsr.cpp:38:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.411 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 1.042 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.111 seconds; current allocated memory: 1.053 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 1.083 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 1.096 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'main_func' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'first_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'first_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.484 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'second_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'second_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.192 seconds; current allocated memory: 1.101 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'main_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'main_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.173 seconds; current allocated memory: 1.101 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V_1' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'first_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 1.102 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'second_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.184 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/out_r' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'out_r' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/compare' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'compare' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'main_func' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'main_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.231 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.508 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.524 seconds; current allocated memory: 1.110 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for main_func.
+INFO: [VLOG 209-307] Generating Verilog RTL for main_func.
+INFO: [HLS 200-789] **** Estimated Fmax: 3484.32 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.98 seconds; current allocated memory: 83.676 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 26.981 seconds; peak allocated memory: 1.111 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=lfsr
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -display_name lfsr -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file lfsr_7_taps/ip_lfsr/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.46 seconds; current allocated memory: 6.426 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 33.908 seconds; peak allocated memory: 1.035 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=lfsr
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name lfsr -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.126 seconds; current allocated memory: 1.035 GB.
+INFO: [HLS 200-10] Analyzing design file 'prbs_7_taps/source/prbs.cpp' ... 
+ERROR: [HLS 207-812] 'lfsr.h' file not found (prbs_7_taps/source/prbs.cpp:5:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.499 seconds; current allocated memory: 0.363 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 21.714 seconds; peak allocated memory: 1.036 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=lfsr
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name lfsr -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.097 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Analyzing design file 'prbs_7_taps/source/prbs.cpp' ... 
+ERROR: [HLS 207-812] 'lfsr.h' file not found (prbs_7_taps/source/prbs.cpp:5:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.417 seconds; current allocated memory: 0.352 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 15.316 seconds; peak allocated memory: 1.029 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=lfsr
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name lfsr -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/lfsr_7_taps/ip_lfsr -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.08 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-10] Analyzing design file 'prbs_7_taps/source/prbs.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.158 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi7ELb0EEC2EDq7_j' into 'ap_int_base<7, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_uint<7>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1669:558)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3098)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3096)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1498:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:24:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:23:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:47:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:46:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.238 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 1.042 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.158 seconds; current allocated memory: 1.053 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 1.082 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 1.096 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'main_func' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'first_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'first_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.743 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'second_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'second_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'main_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'main_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 1.101 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V_1' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'first_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 1.102 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'second_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/out_r' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'out_r' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/compare' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'compare' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'main_func' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'main_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.265 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.511 seconds; current allocated memory: 1.108 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.768 seconds; current allocated memory: 1.111 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for main_func.
+INFO: [VLOG 209-307] Generating Verilog RTL for main_func.
+INFO: [HLS 200-789] **** Estimated Fmax: 3484.32 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 13.747 seconds; current allocated memory: 84.602 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 28.49 seconds; peak allocated memory: 1.111 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file prbs_7_taps/ip_prbs/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 26.002 seconds; current allocated memory: 6.523 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 41.509 seconds; peak allocated memory: 1.035 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file prbs_7_taps/ip_prbs/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 15.363 seconds; current allocated memory: 6.586 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 30.234 seconds; peak allocated memory: 1.035 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file prbs_7_taps/ip_prbs/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 14.256 seconds; current allocated memory: 7.344 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 0 seconds. Total elapsed time: 29.859 seconds; peak allocated memory: 1.035 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.229 seconds; current allocated memory: 10.719 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 0 seconds. Total elapsed time: 30.017 seconds; peak allocated memory: 1.039 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 28.748 seconds; current allocated memory: 9.840 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 43.086 seconds; peak allocated memory: 1.038 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.079 seconds; current allocated memory: 0.285 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 0 seconds. Total elapsed time: 19.706 seconds; peak allocated memory: 1.030 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.029 seconds; current allocated memory: 0.438 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 19.595 seconds; peak allocated memory: 1.029 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.086 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-10] Analyzing design file 'prbs_7_taps/source/prbs.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.285 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi7ELb0EEC2EDq7_j' into 'ap_int_base<7, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_uint<7>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1669:558)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3098)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3096)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1498:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:24:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:23:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:47:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:46:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.771 seconds; current allocated memory: 1.031 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.031 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.183 seconds; current allocated memory: 1.043 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 1.053 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.142 seconds; current allocated memory: 1.083 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 1.097 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'main_func' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'first_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'first_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.508 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'second_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'second_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 1.101 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.116 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'main_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'main_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 1.101 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V_1' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'first_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 1.102 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'second_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/out_r' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'out_r' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/compare' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'compare' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'main_func' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'main_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.306 seconds; current allocated memory: 1.108 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.463 seconds; current allocated memory: 1.111 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for main_func.
+INFO: [VLOG 209-307] Generating Verilog RTL for main_func.
+INFO: [HLS 200-789] **** Estimated Fmax: 3484.32 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 12.44 seconds; current allocated memory: 84.258 MB.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 27.398 seconds; peak allocated memory: 1.111 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+ERROR: [COSIM 212-362] Aborting co-simulation: C TB post check failed.
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 23.825 seconds; current allocated memory: 10.043 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 38.556 seconds; peak allocated memory: 1.039 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 22.194 seconds; current allocated memory: 9.504 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 37.154 seconds; peak allocated memory: 1.038 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 22.718 seconds; current allocated memory: 10.297 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 37.416 seconds; peak allocated memory: 1.039 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 21.002 seconds; current allocated memory: 10.574 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 36.096 seconds; peak allocated memory: 1.039 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.117 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-10] Analyzing design file 'prbs_7_taps/source/prbs.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.32 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi7ELb0EEC2EDq7_j' into 'ap_int_base<7, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_uint<7>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1669:558)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3098)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3096)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1498:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:24:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:23:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:47:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:46:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.913 seconds; current allocated memory: 1.031 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.031 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.208 seconds; current allocated memory: 1.042 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.147 seconds; current allocated memory: 1.053 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 1.083 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 1.096 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'main_func' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'first_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'first_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.391 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'second_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'second_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.101 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'main_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'main_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.163 seconds; current allocated memory: 1.101 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V_1' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'first_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'second_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/out_r' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'out_r' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/compare' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'compare' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'main_func' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'main_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.315 seconds; current allocated memory: 1.105 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.413 seconds; current allocated memory: 1.109 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.541 seconds; current allocated memory: 1.111 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for main_func.
+INFO: [VLOG 209-307] Generating Verilog RTL for main_func.
+INFO: [HLS 200-789] **** Estimated Fmax: 3484.32 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 12.82 seconds; current allocated memory: 84.320 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 28.257 seconds; peak allocated memory: 1.111 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.087 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-10] Analyzing design file 'prbs_7_taps/source/prbs.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.692 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi7ELb0EEC2EDq7_j' into 'ap_int_base<7, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_uint<7>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1669:558)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3098)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3096)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1498:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:24:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:23:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:47:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:46:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.576 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 1.042 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 1.053 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 1.082 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 1.095 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'main_func' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'first_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'first_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.402 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'second_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'second_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.228 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'main_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'main_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.207 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1.101 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V_1' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'first_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.138 seconds; current allocated memory: 1.102 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'second_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/out_r' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'out_r' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/compare' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'compare' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'main_func' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'main_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.281 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.306 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.37 seconds; current allocated memory: 1.110 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for main_func.
+INFO: [VLOG 209-307] Generating Verilog RTL for main_func.
+INFO: [HLS 200-789] **** Estimated Fmax: 3484.32 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 11.498 seconds; current allocated memory: 83.723 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 26.671 seconds; peak allocated memory: 1.111 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format sysgen -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 22.701 seconds; current allocated memory: 10.105 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 37.455 seconds; peak allocated memory: 1.038 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file prbs_7_taps/ip_prbs/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 15.349 seconds; current allocated memory: 6.828 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 31.454 seconds; peak allocated memory: 1.035 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file prbs_7_taps/ip_prbs/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 23.575 seconds; current allocated memory: 6.801 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 45.993 seconds; peak allocated memory: 1.042 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.926 seconds; current allocated memory: 0.281 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 28.788 seconds; peak allocated memory: 1.031 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.85 seconds; current allocated memory: 0.293 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 16.614 seconds; peak allocated memory: 1.029 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.083 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-10] Analyzing design file 'prbs_7_taps/source/prbs.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.474 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi7ELb0EEC2EDq7_j' into 'ap_int_base<7, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_uint<7>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1669:558)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base<7, false>(ap_int_base<7, false> const&)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1497:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3098)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<32, true>::logic operator&<7, false, 32, true>(ap_int_base<7, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:3096)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::ap_int_base(int)' into 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1498:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:24:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:23:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:16:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'first_func()' (prbs_7_taps/source/prbs.cpp:15:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::logic operator|<7, false, 7, false>(ap_int_base<7, false> const&, ap_int_base<7, false> const&)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:47:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:46:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:39:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<($_0)32, true>::logic operator&<7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<7, false>::RType<7, false>::arg1 operator>><7, false>(ap_int_base<7, false> const&, int)' into 'second_func(bool, bool&)' (prbs_7_taps/source/prbs.cpp:38:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.03 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 1.042 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 1.052 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.082 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 1.095 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'main_func' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'first_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'first_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.555 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'second_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'second_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'main_func'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'main_func'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'first_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V_1' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'first_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 1.102 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'second_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'lfsr_shift_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'second_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.179 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'main_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/out_r' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'out_r' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'main_func/compare' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'compare' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'main_func' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'main_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.299 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.418 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.488 seconds; current allocated memory: 1.110 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for main_func.
+INFO: [VLOG 209-307] Generating Verilog RTL for main_func.
+INFO: [HLS 200-789] **** Estimated Fmax: 3484.32 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 13.373 seconds; current allocated memory: 84.094 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 28.578 seconds; peak allocated memory: 1.111 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=prbs7
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name prbs7 -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./prbs_7_taps/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name main_func main_func 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/prbs_7_taps/ip_prbs 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file prbs_7_taps/ip_prbs/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 27.628 seconds; current allocated memory: 6.629 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 50.678 seconds; peak allocated memory: 1.041 GB.

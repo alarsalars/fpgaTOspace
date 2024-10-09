@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1728461563266">
+  <ports id="10" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="14" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="18" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="21" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="22" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="25" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="31" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="32" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="33" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="35" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="36" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@ports.0"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="41" pipe_depth="1" RegionName="first_func">
+    <basic_blocks id="10" name="first_func" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="2" name="lfsr_shift_V_1_load" lineNumber="1669" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1089092008" contextFuncName="operator_rs_7_false" bitwidth="7" opcode="load" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1669" fileDirectory="C:\Users\TAlars\Documents\vivado_projects_tests\fpgaTOspace\HLS" functionName="operator&amp;gt;&amp;gt;&amp;lt;7, false&amp;gt;"/>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="3" name="tmp" lineNumber="21" fileName="prbs_7_taps/source/prbs.cpp" fileDirectory=".." rtlName="tmp_fu_18_p3" coreId="1471679712" contextFuncName="first_func" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="prbs_7_taps/source/prbs.cpp" linenumber="21" fileDirectory="C:\Users\TAlars\Documents\vivado_projects_tests\fpgaTOspace\HLS" functionName="first_func"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="tmp_2" lineNumber="21" fileName="prbs_7_taps/source/prbs.cpp" fileDirectory=".." rtlName="tmp_2_fu_26_p3" coreId="1057961744" contextFuncName="first_func" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="prbs_7_taps/source/prbs.cpp" linenumber="21" fileDirectory="C:\Users\TAlars\Documents\vivado_projects_tests\fpgaTOspace\HLS" functionName="first_func"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="5" name="bit_xor" lineNumber="21" originalName="bit_xor" fileName="prbs_7_taps/source/prbs.cpp" fileDirectory=".." rtlName="bit_xor_fu_34_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="first_func" bitwidth="1" opcode="xor" m_display="0" m_delay="0.28" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="prbs_7_taps/source/prbs.cpp" linenumber="21" fileDirectory="C:\Users\TAlars\Documents\vivado_projects_tests\fpgaTOspace\HLS" functionName="first_func"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>ret</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="lshr_ln" lineNumber="1498" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="lshr_ln_fu_40_p4" coreId="892434540" contextFuncName="operator_or_7_false_7_false" bitwidth="6" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1498" fileDirectory="C:\Users\TAlars\Documents\vivado_projects_tests\fpgaTOspace\HLS" functionName="operator|&amp;lt;7, false, 7, false&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="ret_V" lineNumber="1498" originalName="ret.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="ret_V_fu_50_p3" coreId="1603323552" contextFuncName="operator_or_7_false_7_false" bitwidth="7" opcode="bitconcatenate" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1498" fileDirectory="C:\Users\TAlars\Documents\vivado_projects_tests\fpgaTOspace\HLS" functionName="operator|&amp;lt;7, false, 7, false&amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="lfsr_shift_V_1_write_ln24" lineNumber="24" fileName="prbs_7_taps/source/prbs.cpp" fileDirectory=".." coreId="1603460944" contextFuncName="first_func" opcode="store" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="prbs_7_taps/source/prbs.cpp" linenumber="24" fileDirectory="C:\Users\TAlars\Documents\vivado_projects_tests\fpgaTOspace\HLS" functionName="first_func"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="_ln26" lineNumber="26" fileName="prbs_7_taps/source/prbs.cpp" fileDirectory=".." coreId="1605986096" contextFuncName="first_func" opcode="ret" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="prbs_7_taps/source/prbs.cpp" linenumber="26" fileDirectory="C:\Users\TAlars\Documents\vivado_projects_tests\fpgaTOspace\HLS" functionName="first_func"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>ap_return</dataOutputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="prbs_7_taps/source/prbs.cpp">
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>24</validLinenumbers>
+        <validLinenumbers>26</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>1669</validLinenumbers>
+        <validLinenumbers>1498</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="tmp_2_fu_26">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_18">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bit_xor_fu_34">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln_fu_40">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_fu_50">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln24_store_fu_58">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="lfsr_shift_V_1_load_load_fu_14">
+    <nodeIds>2</nodeIds>
+  </ioNodes>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="2" stage="1" latency="1"/>
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="first_func" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>10</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
