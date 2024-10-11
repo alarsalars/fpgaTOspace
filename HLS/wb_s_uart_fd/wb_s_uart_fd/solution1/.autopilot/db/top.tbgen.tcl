@@ -17,11 +17,11 @@ set C_modelArgList {
 	{ we uint 1 regular  }
 	{ cyc uint 1 regular  }
 	{ stb uint 1 regular  }
-	{ wb_in int 8 unused  }
+	{ wb_in int 8 regular  }
 	{ rx uint 1 regular  }
 	{ tx int 1 regular {pointer 1}  }
 	{ ack int 1 regular {pointer 1}  }
-	{ uart_out int 8 regular {pointer 1}  }
+	{ uart_out int 10 regular {pointer 1}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "adr", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
@@ -32,7 +32,7 @@ set C_modelArgMapList {[
  	{ "Name" : "rx", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "tx", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "ack", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "uart_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "uart_out", "interface" : "wire", "bitwidth" : 10, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 11
 set portList { 
@@ -46,7 +46,7 @@ set portList {
 	{ rx sc_in sc_logic 1 signal 5 } 
 	{ tx sc_out sc_logic 1 signal 6 } 
 	{ ack sc_out sc_logic 1 signal 7 } 
-	{ uart_out sc_out sc_lv 8 signal 8 } 
+	{ uart_out sc_out sc_lv 10 signal 8 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -59,7 +59,7 @@ set NewPortList {[
  	{ "name": "rx", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "rx", "role": "default" }} , 
  	{ "name": "tx", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tx", "role": "default" }} , 
  	{ "name": "ack", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "ack", "role": "default" }} , 
- 	{ "name": "uart_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "uart_out", "role": "default" }}  ]}
+ 	{ "name": "uart_out", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "uart_out", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -86,7 +86,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "tx", "Type" : "None", "Direction" : "O"},
 			{"Name" : "ack", "Type" : "None", "Direction" : "O"},
 			{"Name" : "uart_out", "Type" : "None", "Direction" : "O"},
-			{"Name" : "state", "Type" : "OVld", "Direction" : "IO"}]}]}
+			{"Name" : "state", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "tx_ff", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "i", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "j", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "baud_count", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "uart_rd_shift_V", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "uart_wr_shift_V", "Type" : "OVld", "Direction" : "IO"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -95,12 +101,18 @@ set ArgLastReadFirstWriteLatency {
 		we {Type I LastRead 0 FirstWrite -1}
 		cyc {Type I LastRead 0 FirstWrite -1}
 		stb {Type I LastRead 0 FirstWrite -1}
-		wb_in {Type I LastRead -1 FirstWrite -1}
+		wb_in {Type I LastRead 0 FirstWrite -1}
 		rx {Type I LastRead 0 FirstWrite -1}
 		tx {Type O LastRead -1 FirstWrite 0}
 		ack {Type O LastRead -1 FirstWrite 0}
 		uart_out {Type O LastRead -1 FirstWrite 0}
-		state {Type IO LastRead -1 FirstWrite -1}}}
+		state {Type IO LastRead -1 FirstWrite -1}
+		tx_ff {Type IO LastRead -1 FirstWrite -1}
+		i {Type IO LastRead -1 FirstWrite -1}
+		j {Type IO LastRead -1 FirstWrite -1}
+		baud_count {Type IO LastRead -1 FirstWrite -1}
+		uart_rd_shift_V {Type IO LastRead -1 FirstWrite -1}
+		uart_wr_shift_V {Type IO LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -121,7 +133,7 @@ set Spec2ImplPortList {
 	rx { ap_none {  { rx in_data 0 1 } } }
 	tx { ap_none {  { tx out_data 1 1 } } }
 	ack { ap_none {  { ack out_data 1 1 } } }
-	uart_out { ap_none {  { uart_out out_data 1 8 } } }
+	uart_out { ap_none {  { uart_out out_data 1 10 } } }
 }
 
 set maxi_interface_dict [dict create]

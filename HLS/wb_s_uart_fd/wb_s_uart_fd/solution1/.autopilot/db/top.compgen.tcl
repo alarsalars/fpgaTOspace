@@ -72,6 +72,21 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 5 \
+    name wb_in \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_wb_in \
+    op interface \
+    ports { wb_in { I 8 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 6 \
     name rx \
     type other \
     dir I \
@@ -86,7 +101,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 6 \
+    id 7 \
     name tx \
     type other \
     dir O \
@@ -101,7 +116,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 8 \
     name ack \
     type other \
     dir O \
@@ -116,7 +131,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 9 \
     name uart_out \
     type other \
     dir O \
@@ -124,7 +139,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_uart_out \
     op interface \
-    ports { uart_out { O 8 vector } } \
+    ports { uart_out { O 10 vector } } \
 } "
 }
 

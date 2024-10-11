@@ -159,6 +159,10 @@ extern "C" {
 
 
 
+
+
+
+
 # 1 "wb_s_uart_fd/source/top.h" 1
 
 
@@ -5712,15 +5716,19 @@ inline __attribute__((nodebug)) bool operator!=(
 # 361 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 2
 # 4 "wb_s_uart_fd/source/top.h" 2
 
-typedef enum {idle,write,read} wb_fsm;
-# 5 "wb_s_uart_fd/source/top.cpp" 2
+typedef enum {idle,write,read_wait,read} wb_fsm;
+# 9 "wb_s_uart_fd/source/top.cpp" 2
 
 
 __attribute__((sdx_kernel("top", 0))) void top(ap_uint<8> adr, bool we, bool cyc, bool stb,ap_uint<8> wb_in, bool rx
-  ,bool &tx, bool &ack,ap_uint<8> &uart_out){
-#line 16 "C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/wb_s_uart_fd/wb_s_uart_fd/solution1/csynth.tcl"
+  ,bool &tx, bool &ack,ap_uint<10> &uart_out){
+#line 17 "C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/wb_s_uart_fd/wb_s_uart_fd/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=top
-# 8 "wb_s_uart_fd/source/top.cpp"
+# 12 "wb_s_uart_fd/source/top.cpp"
+
+#line 6 "C:/Users/TAlars/Documents/vivado_projects_tests/fpgaTOspace/HLS/wb_s_uart_fd/wb_s_uart_fd/solution1/directives.tcl"
+#pragma HLSDIRECTIVE TOP name=top
+# 12 "wb_s_uart_fd/source/top.cpp"
 
 #pragma HLS PIPELINE
 #pragma HLS INTERFACE ap_none port=adr
@@ -5736,38 +5744,42 @@ __attribute__((sdx_kernel("top", 0))) void top(ap_uint<8> adr, bool we, bool cyc
 
 
  static wb_fsm state = idle;
- static int uart_count = 0;
  static unsigned int baud_count = (100000000 / (16 * 112500)) -1;
+ static int i = 0;
+ static int j = 1;
 
 
- ap_uint<8> adr_reg = 0;
- ap_uint<8> wb_in_reg = 0;
- static ap_uint<8> uart_wr_shift = 0;
- static ap_uint<8> uart_rd_shift = 0;
- ap_uint<8> uart_out_reg = 0;
- ap_uint<8> data_out_reg = 0;
- bool tx_ff = 1;
+ ap_uint<8> adr_reg ;
+ static ap_uint<8> wb_in_reg ;
+ static ap_uint<11> uart_wr_shift ;
+ static ap_uint<11> uart_rd_shift ;
+ static bool tx_ff = 1;
+ static bool rx_ff = 1;
 
  wb_fsm next_state = idle;
 
  adr_reg = adr;
  wb_in_reg = wb_in;
+ rx_ff = rx;
+
 
  switch (state){
  case idle:
-  ack = 0;
   tx_ff = 1;
-  uart_count = 0;
+  i = 0;
+  j = 1;
   baud_count = (100000000 / (16 * 112500)) -1;
   if (adr_reg == 0xfc){
+   ack = 0;
    if ( stb == 1 & cyc == 1 & we==1){
     next_state = write;
-    uart_wr_shift = (0b1,wb_in_reg,0b0);
+    uart_wr_shift = (1 << 10) | (1 << 9) | (wb_in_reg << 1) | 0b0;
+    tx_ff = uart_wr_shift[i];
+    i++;
 
    }
    else if ( stb == 1 & cyc == 1 & we==0){
-    next_state = read;
-    uart_rd_shift = 0;
+     next_state = read_wait;
    }
    else {
     next_state = idle;
@@ -5776,54 +5788,68 @@ __attribute__((sdx_kernel("top", 0))) void top(ap_uint<8> adr, bool we, bool cyc
   }
   else {
    next_state = idle;
+   ack = 0;
   }
   break;
 
-  case write:
-   VITIS_LOOP_67_1: for (int i = 0; i < 10;i++){
-    VITIS_LOOP_68_2: for (int j = 0; j<(100000000 / (16 * 112500))-1;j++)
-     if (baud_count == 1){
-      tx_ff = uart_wr_shift[i];
-      baud_count = (100000000 / (16 * 112500)) -1;
-      next_state = write;
+ case write:
+   if (baud_count == 1) {
+            tx_ff = uart_wr_shift[i];
+            baud_count = (100000000 / (16 * 112500)) - 1;
+            i++;
+            if (i >= 11) {
+                next_state = idle;
+                ack = 1;
+                i = 0;
+            } else {
+                next_state = write;
+                ack = 0;
+            }
+   } else
+   {
+      ack = 0;
+            baud_count--;
+            next_state = write;
+    }
 
-     }
-     else{
-      baud_count = baud_count -1;
-      next_state = write;
-     }
+     break;
 
-   }
-   ack = 1;
-   next_state = idle;
-   tx_ff = 1;
-   baud_count = (100000000 / (16 * 112500)) -1;
+ case read_wait:
+   if (!rx_ff){
+    uart_rd_shift[0] = rx_ff;
+    next_state = read;}
+   else{
+    next_state = idle;
+    ack=0;}
    break;
+
 
   case read:
-   if (rx == 0){
-   VITIS_LOOP_89_3: for (int i=0; i<8;i++){
-    VITIS_LOOP_90_4: for (int j=0;j<(100000000 / (16 * 112500)) -1;j++){
-      if (baud_count == 1){
-       uart_rd_shift[i] = rx;
-       baud_count = (100000000 / (16 * 112500)) -1;
-       next_state = read;
-      }
-      else{
-       baud_count = baud_count -1;
-       next_state = read;
-      }
+   if (baud_count == 1){
+     uart_rd_shift[j] = rx_ff;
+     baud_count = (100000000 / (16 * 112500)) -1;
+     j++;
+     if (j >=10){
+      next_state = idle;
+      j=1;
+      ack=1;
+     }
+     else{
+     next_state = read;
+     ack=0;
+     }
+
     }
+    else{
+     baud_count--;
+     next_state = read;
+     ack=0;
+
     }
-   ack = 1;
-   next_state = idle;
-   baud_count = (100000000 / (16 * 112500)) -1;
-   uart_out_reg = uart_rd_shift;
-   }
-   else{
-    next_state = read;
-   }
+
    break;
+
+
   default:
   break;
 
@@ -5835,7 +5861,7 @@ __attribute__((sdx_kernel("top", 0))) void top(ap_uint<8> adr, bool we, bool cyc
 
  tx = tx_ff;
  state = next_state;
- uart_out = uart_out_reg;
+ uart_out = (uart_rd_shift)& 0b1111111111;
 
 
 

@@ -1,12 +1,13 @@
 {"sourceFile": [{
       "name": "",
-      "directive": [{
+      "directive": [
+        {
           "functionName": "top",
           "label": "",
           "functionLabel": "",
           "id": "1",
-          "sourceFile": "C:\/Users\/TAlars\/Documents\/vivado_projects_tests\/fpgaTOspace\/HLS\/wb_s_uart_fd\/wb_s_uart_fd\/solution1\/csynth.tcl",
-          "sourceLine": "16",
+          "sourceFile": "C:\/Users\/TAlars\/Documents\/vivado_projects_tests\/fpgaTOspace\/HLS\/wb_s_uart_fd\/wb_s_uart_fd\/solution1\/directives.tcl",
+          "sourceLine": "6",
           "pragma": {
             "name": "TOP",
             "option": [{
@@ -14,5 +15,21 @@
                 "value": "top"
               }]
           }
-        }]
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/TAlars\/Documents\/vivado_projects_tests\/fpgaTOspace\/HLS\/wb_s_uart_fd\/wb_s_uart_fd\/solution1\/csynth.tcl",
+          "sourceLine": "17",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "top"
+              }]
+          }
+        }
+      ]
     }]}

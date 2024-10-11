@@ -41,8 +41,8 @@
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="8" access_type="w" src_name="uart_out" src_type="ap_uint&lt;8&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="Register" hw_name="uart_out" hw_bitwidth="8" hw_size_or_depth="1" hw_kernel_support="false">
+      <arg id="8" access_type="w" src_name="uart_out" src_type="ap_uint&lt;10&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="uart_out" hw_bitwidth="10" hw_size_or_depth="1" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>

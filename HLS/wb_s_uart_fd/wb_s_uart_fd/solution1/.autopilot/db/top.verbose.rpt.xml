@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top'" level="0">
-<item name = "Date">Wed Oct  9 22:00:43 2024
+<item name = "Date">Fri Oct 11 11:03:55 2024
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">wb_s_uart_fd</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
-<item name = "Product family">virtexuplus</item>
-<item name = "Target device">xcvu11p-flga2577-1-e</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 1.401 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 2.294 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -47,15 +47,13 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 28, -</column>
+<column name="Expression">-, -, 0, 199, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 45, -</column>
-<column name="Register">-, -, 3, -, -</column>
-<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
-<specialColumn name="Available">4032, 9216, 2592000, 1296000, 960</specialColumn>
+<column name="Multiplexer">-, -, -, 177, -</column>
+<column name="Register">-, -, 119, -, -</column>
+<specialColumn name="Available">1824, 2520, 548160, 274080, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
@@ -79,27 +77,44 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="and_ln47_1_fu_157_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln47_fu_151_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln52_fu_169_p2">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_50">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_56">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_59">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln1019_fu_139_p2">icmp, 0, 0, 11, 8, 4</column>
-<column name="next_state_fu_175_p3">select, 0, 0, 3, 1, 3</column>
-<column name="xor_ln52_fu_163_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="add_ln111_fu_551_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln79_fu_504_p2">+, 0, 0, 39, 32, 1</column>
+<column name="grp_fu_400_p2">+, 0, 0, 39, 32, 2</column>
+<column name="and_ln54_1_fu_582_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln54_fu_576_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln61_fu_594_p2">and, 0, 0, 2, 1, 1</column>
+<column name="grp_fu_395_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="icmp_ln1019_fu_570_p2">icmp, 0, 0, 11, 8, 4</column>
+<column name="icmp_ln112_fu_558_p2">icmp, 0, 0, 20, 32, 4</column>
+<column name="icmp_ln80_fu_511_p2">icmp, 0, 0, 20, 32, 4</column>
+<column name="next_state_fu_600_p3">select, 0, 0, 3, 1, 3</column>
+<column name="xor_ln61_fu_588_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ack">14, 3, 1, 3</column>
-<column name="state">31, 6, 2, 12</column>
+<column name="ap_phi_mux_i_new_0_phi_fu_221_p22">20, 4, 32, 128</column>
+<column name="ap_phi_mux_j_flag_0_phi_fu_258_p22">14, 3, 1, 3</column>
+<column name="ap_phi_mux_j_new_0_phi_fu_296_p22">14, 3, 32, 96</column>
+<column name="ap_phi_mux_next_state_1_phi_fu_361_p22">26, 5, 2, 10</column>
+<column name="ap_phi_mux_phi_ln186_phi_fu_333_p22">20, 4, 10, 40</column>
+<column name="ap_phi_mux_tx_ff_flag_0_phi_fu_152_p22">14, 3, 1, 3</column>
+<column name="ap_phi_mux_tx_ff_loc_0_phi_fu_190_p22">26, 5, 1, 5</column>
+<column name="baud_count">20, 4, 32, 128</column>
+<column name="uart_rd_shift_V">9, 2, 11, 22</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="baud_count">32, 0, 32, 0</column>
+<column name="i">32, 0, 32, 0</column>
+<column name="j">32, 0, 32, 0</column>
 <column name="state">2, 0, 2, 0</column>
+<column name="tx_ff">1, 0, 1, 0</column>
+<column name="uart_rd_shift_V">11, 0, 11, 0</column>
+<column name="uart_wr_shift_V">8, 0, 10, 2</column>
 </table>
 </item>
 </section>
@@ -119,7 +134,7 @@
 <column name="rx">in, 1, ap_none, rx, scalar</column>
 <column name="tx">out, 1, ap_none, tx, pointer</column>
 <column name="ack">out, 1, ap_none, ack, pointer</column>
-<column name="uart_out">out, 8, ap_none, uart_out, pointer</column>
+<column name="uart_out">out, 10, ap_none, uart_out, pointer</column>
 </table>
 </item>
 </section>

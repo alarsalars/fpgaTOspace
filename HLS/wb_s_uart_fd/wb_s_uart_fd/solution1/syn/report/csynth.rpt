@@ -4,23 +4,23 @@
 == Synthesis Summary Report of 'top'
 ================================================================
 + General Information: 
-    * Date:           Wed Oct  9 22:00:43 2024
+    * Date:           Fri Oct 11 11:03:55 2024
     * Version:        2022.2 (Build 3670227 on Oct 13 2022)
     * Project:        wb_s_uart_fd
     * Solution:       solution1 (Vivado IP Flow Target)
-    * Product family: virtexuplus
-    * Target device:  xcvu11p-flga2577-1-e
+    * Product family: zynquplus
+    * Target device:  xczu9eg-ffvb1156-2-e
     
 
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
-    | Modules| Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |         |          |     |
-    | & Loops| Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF   |    LUT   | URAM|
-    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
-    |+ top   |    II|  5.90|        0|   0.000|         -|        1|     -|       yes|     -|   -|  3 (~0%)|  73 (~0%)|    -|
-    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    | Modules| Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    | & Loops| Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ top   |    II|  5.01|        0|   0.000|         -|        1|     -|       yes|     -|   -|  119 (~0%)|  376 (~0%)|    -|
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
 
 
 ================================================================
@@ -36,7 +36,7 @@
 | rx        | ap_none | 1        |
 | stb       | ap_none | 1        |
 | tx        | ap_none | 1        |
-| uart_out  | ap_none | 8        |
+| uart_out  | ap_none | 10       |
 | wb_in     | ap_none | 8        |
 | we        | ap_none | 1        |
 +-----------+---------+----------+
@@ -55,19 +55,19 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+----------+-----------+-------------+
-| Argument | Direction | Datatype    |
-+----------+-----------+-------------+
-| adr      | in        | ap_uint<8>  |
-| we       | in        | bool        |
-| cyc      | in        | bool        |
-| stb      | in        | bool        |
-| wb_in    | in        | ap_uint<8>  |
-| rx       | in        | bool        |
-| tx       | out       | bool&       |
-| ack      | out       | bool&       |
-| uart_out | out       | ap_uint<8>& |
-+----------+-----------+-------------+
++----------+-----------+--------------+
+| Argument | Direction | Datatype     |
++----------+-----------+--------------+
+| adr      | in        | ap_uint<8>   |
+| we       | in        | bool         |
+| cyc      | in        | bool         |
+| stb      | in        | bool         |
+| wb_in    | in        | ap_uint<8>   |
+| rx       | in        | bool         |
+| tx       | out       | bool&        |
+| ack      | out       | bool&        |
+| uart_out | out       | ap_uint<10>& |
++----------+-----------+--------------+
 
 * SW-to-HW Mapping
 +----------+--------------+---------+
@@ -88,7 +88,16 @@
 ================================================================
 == Bind Op Report
 ================================================================
-  No bind op info in design
++-----------------------+-----+--------+-----------+-----+--------+---------+
+| Name                  | DSP | Pragma | Variable  | Op  | Impl   | Latency |
++-----------------------+-----+--------+-----------+-----+--------+---------+
+| + top                 | 0   |        |           |     |        |         |
+|   grp_fu_400_p2       | -   |        | add_ln91  | add | fabric | 0       |
+|   add_ln79_fu_504_p2  | -   |        | add_ln79  | add | fabric | 0       |
+|   grp_fu_400_p2       | -   |        | add_ln124 | add | fabric | 0       |
+|   add_ln111_fu_551_p2 | -   |        | add_ln111 | add | fabric | 0       |
++-----------------------+-----+--------+-----------+-----+--------+---------+
+
 
 ================================================================
 == Bind Storage Report
@@ -102,17 +111,17 @@
 +-----------+--------------------------+-------------------------------------------------+
 | Type      | Options                  | Location                                        |
 +-----------+--------------------------+-------------------------------------------------+
-| pipeline  |                          | wb_s_uart_fd/source/top.cpp:9 in top            |
-| interface | ap_none port=adr         | wb_s_uart_fd/source/top.cpp:10 in top, adr      |
-| interface | ap_none port=we          | wb_s_uart_fd/source/top.cpp:11 in top, we       |
-| interface | ap_none port=cyc         | wb_s_uart_fd/source/top.cpp:12 in top, cyc      |
-| interface | ap_none port=stb         | wb_s_uart_fd/source/top.cpp:13 in top, stb      |
-| interface | ap_none port=wb_in       | wb_s_uart_fd/source/top.cpp:14 in top, wb_in    |
-| interface | ap_none port=rx          | wb_s_uart_fd/source/top.cpp:15 in top, rx       |
-| interface | ap_none port=tx          | wb_s_uart_fd/source/top.cpp:16 in top, tx       |
-| interface | ap_none port=ack         | wb_s_uart_fd/source/top.cpp:17 in top, ack      |
-| interface | ap_none port=uart_out    | wb_s_uart_fd/source/top.cpp:18 in top, uart_out |
-| interface | ap_ctrl_none port=return | wb_s_uart_fd/source/top.cpp:19 in top, return   |
+| pipeline  |                          | wb_s_uart_fd/source/top.cpp:13 in top           |
+| interface | ap_none port=adr         | wb_s_uart_fd/source/top.cpp:14 in top, adr      |
+| interface | ap_none port=we          | wb_s_uart_fd/source/top.cpp:15 in top, we       |
+| interface | ap_none port=cyc         | wb_s_uart_fd/source/top.cpp:16 in top, cyc      |
+| interface | ap_none port=stb         | wb_s_uart_fd/source/top.cpp:17 in top, stb      |
+| interface | ap_none port=wb_in       | wb_s_uart_fd/source/top.cpp:18 in top, wb_in    |
+| interface | ap_none port=rx          | wb_s_uart_fd/source/top.cpp:19 in top, rx       |
+| interface | ap_none port=tx          | wb_s_uart_fd/source/top.cpp:20 in top, tx       |
+| interface | ap_none port=ack         | wb_s_uart_fd/source/top.cpp:21 in top, ack      |
+| interface | ap_none port=uart_out    | wb_s_uart_fd/source/top.cpp:22 in top, uart_out |
+| interface | ap_ctrl_none port=return | wb_s_uart_fd/source/top.cpp:23 in top, return   |
 +-----------+--------------------------+-------------------------------------------------+
 
 

@@ -2,7 +2,7 @@
 
 #include <ap_int.h>
 
-typedef enum {idle,write,read} wb_fsm;
+typedef enum {idle,write,read_wait,read} wb_fsm;
 
 
 #define CLOCK_FREQUENCY 100000000 // 100 MHz

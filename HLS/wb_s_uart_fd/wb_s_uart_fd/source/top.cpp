@@ -1,11 +1,15 @@
 
+
+// Taha Alars
+// Very simple wishbone slave uart sender reciver half duplux. It has large room to improve also to manage
+// the send and recive data package, I just wanted to test wb-uart with HLS in this code
 // I use only one baudrate = 115200
 
 #include "top.h"
 
 
 void top(ap_uint<8> adr, bool we, bool cyc, bool stb,ap_uint<8> wb_in, bool rx
-		,bool &tx, bool &ack,ap_uint<8> &uart_out){
+		,bool &tx, bool &ack,ap_uint<10> &uart_out){
 #pragma HLS PIPELINE
 #pragma HLS INTERFACE ap_none port=adr
 #pragma HLS INTERFACE ap_none port=we
@@ -20,38 +24,42 @@ void top(ap_uint<8> adr, bool we, bool cyc, bool stb,ap_uint<8> wb_in, bool rx
 
 
 	static wb_fsm state = idle;
-	static int uart_count = 0;
 	static unsigned int baud_count  = DIVISOR -1;
+	static int i = 0;
+	static int j = 1;
 
 
-	ap_uint<8> adr_reg 		= 0;
-	ap_uint<8> wb_in_reg 		= 0;
-	static ap_uint<8> uart_wr_shift  = 0;
-	static ap_uint<8> uart_rd_shift  = 0;
-	ap_uint<8> uart_out_reg = 0;
-	ap_uint<8> data_out_reg = 0;
-	bool tx_ff = 1;
+	ap_uint<8> adr_reg ;
+	static ap_uint<8> wb_in_reg ;
+	static ap_uint<11> uart_wr_shift ;
+	static ap_uint<11> uart_rd_shift ;
+	static bool tx_ff = 1;
+	static bool rx_ff = 1;
 
 	wb_fsm next_state = idle;
 
 	adr_reg = adr;
 	wb_in_reg = wb_in;
+	rx_ff = rx;
+	//uart_wr_shift = 0b1010111110;
 
 	switch (state){
 	case idle:
-		ack = 0;
 		tx_ff = 1;
-		uart_count = 0;
+		i = 0;
+		j = 1;
 		baud_count  = DIVISOR -1;
 		if (adr_reg == 0xfc){
+			ack = 0;
 			if ( stb == 1 & cyc == 1 & we==1){
 				next_state = write;
-				uart_wr_shift = (0b1,wb_in_reg,0b0);
+				uart_wr_shift = (1 << 10) | (1 << 9) | (wb_in_reg << 1) | 0b0;
+				tx_ff = uart_wr_shift[i];
+				i++;
 
 			}
 			else if ( stb == 1 & cyc == 1 & we==0){
-				next_state = read;
-				uart_rd_shift = 0;
+					next_state = read_wait;
 			}
 			else {
 				next_state = idle;
@@ -60,54 +68,68 @@ void top(ap_uint<8> adr, bool we, bool cyc, bool stb,ap_uint<8> wb_in, bool rx
 		}
 		else {
 			next_state = idle;
+			ack = 0;
 		}
 		break;
 
-	 case write:
-		 for (int i = 0; i < 10;i++){
-			 for (int j = 0; j<DIVISOR-1;j++)
-				 if (baud_count ==  1){
-					 tx_ff = uart_wr_shift[i];
-					 baud_count  = DIVISOR -1;
-					 next_state = write;
+	case write:
+			if (baud_count == 1) {
+				        tx_ff = uart_wr_shift[i];
+				        baud_count = DIVISOR - 1;
+				        i++;
+				        if (i >= 11) {
+				            next_state = idle;
+				            ack = 1;
+				            i = 0;
+				        } else {
+				            next_state = write;
+				            ack = 0;
+				        }
+			} else
+			{
+						ack = 0;
+				        baud_count--;
+				        next_state = write;
+			 }
 
-				 }
-				 else{
-					 baud_count = baud_count -1;
-					 next_state = write;
-				 }
+	    break;
 
-		 }
-		 ack = 1;
-		 next_state = idle;
-		 tx_ff = 1;
-		 baud_count  = DIVISOR -1;
+	case read_wait:
+		 if (!rx_ff){
+			 uart_rd_shift[0] = rx_ff;
+			 next_state = read;}
+		 else{
+			 next_state = idle;
+			 ack=0;}
 		 break;
+
 
 	 case read:
-		 if (rx == 0){
-			for (int i=0; i<8;i++){
-				for (int j=0;j<DIVISOR -1;j++){
-					 if (baud_count ==  1){
-						 uart_rd_shift[i] = rx;
-						 baud_count  = DIVISOR -1;
-						 next_state = read;
-					 }
-					 else{
-						 baud_count = baud_count -1;
-						 next_state = read;
-					 }
-				}
+			if (baud_count ==  1){
+				 uart_rd_shift[j] = rx_ff;
+				 baud_count  = DIVISOR -1;
+				 j++;
+				 if (j >=10){
+					 next_state = idle;
+					 j=1;
+					 ack=1;
+				 }
+				 else{
+				 next_state = read;
+				 ack=0;
+				 }
+
 			 }
-			ack = 1;
-			next_state = idle;
-			baud_count  = DIVISOR -1;
-			uart_out_reg = uart_rd_shift;
-		 }
-		 else{
-			 next_state = read;
-		 }
+			 else{
+				 baud_count--;
+				 next_state = read;
+				 ack=0;
+
+			 }
+
 		 break;
+
+
 	 default:
 		break;
 
@@ -119,7 +141,7 @@ void top(ap_uint<8> adr, bool we, bool cyc, bool stb,ap_uint<8> wb_in, bool rx
 
 	tx = tx_ff;
 	state = next_state;
-	uart_out = uart_out_reg;
+	uart_out = (uart_rd_shift)& 0b1111111111;
 
 
 

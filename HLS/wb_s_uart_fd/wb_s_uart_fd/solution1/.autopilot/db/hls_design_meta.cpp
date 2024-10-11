@@ -10,6 +10,6 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("rx", 1, hls_in, 5, "ap_none", "in_data", 1),
 	Port_Property("tx", 1, hls_out, 6, "ap_none", "out_data", 1),
 	Port_Property("ack", 1, hls_out, 7, "ap_none", "out_data", 1),
-	Port_Property("uart_out", 8, hls_out, 8, "ap_none", "out_data", 1),
+	Port_Property("uart_out", 10, hls_out, 8, "ap_none", "out_data", 1),
 };
 const char* HLS_Design_Meta::dut_name = "top";
