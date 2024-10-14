@@ -1,4 +1,5 @@
 # fpgaTOspace
- It contains all the work that I do in my free time (codes and projects)
+This repository contains all my free-time projects and code related to FPGA development.
 
- The Repo is under build, many projects will be uploaded soon......
+Note:
+The repository is currently under construction, and many projects will be uploaded soon.
