@@ -1,7 +1,8 @@
-# Demos for various projects
+# Project Demos
 
- This directory includes different projects ONLY with Xilinx (Vivado & Vitis) vivado and Vitis version is 2022.2 on windows.
- 
- Tested with Avnet ZUBoard 1CG Development Board (https://www.xilinx.com/products/boards-and-kits/1-1pusyun.html).
- 
- Most of the projected used both PS and PL of the Zynq UltraScale+ MPSoC
+This directory contains various projects developed exclusively with Xilinx tools (Vivado & Vitis), specifically version 2022.2 on Windows.
+
+Hardware Tested:
+Development Board: Avnet ZUBoard 1CG Development Board.
+Key Features:
+Most projects utilize both the Processing System (PS) and Programmable Logic (PL) of the Zynq UltraScale+ MPSoC.

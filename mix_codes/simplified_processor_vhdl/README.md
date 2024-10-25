@@ -1,7 +1,9 @@
-# Demo fot Processor with VHDL testbench and Cocotb
+# VHDL Processor Design with Cocotb Verification
 
- I found @Kumar Khandagle talking about designing a Processor in VHDL, I took him as reference and I am trying to douplicate his work with my own code implimitation but the main concept from him.
+This project is a custom implementation of a processor in VHDL, inspired by Kumar Khandagle's work. While the core concept is based on his design, the code and implementation are my own.
 
- It would be improved be using the memory as IN & OUT ports with BUS but for simplicity it used internal memory as array
+Processor Design: Built using VHDL with internal memory arrays for simplicity, though future iterations could use I/O ports with a bus system for better memory handling.
 
- I will add a simple VHDL TB also I want to test it with COCOTB for covering COCOTB in good example
+Future Improvements:
+Implement I/O ports with a bus for memory management.
+Extend Cocotb coverage for more complex test cases.

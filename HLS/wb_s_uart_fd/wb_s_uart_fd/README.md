@@ -1,8 +1,10 @@
-# Wishbone slave UART half duplex
+# Wishbone Slave UART (Half Duplex)
 
-In this IP i wanted to design my first protocol in HLS, I focused on immplementing the wishbone and UART concept and verifying the design with testbench in HLS.
-It has a large room to improving but this is not my target in the time been. However, I made sure to test every detials of the design but not all edge cases.
+This IP is my first attempt at designing a protocol in HLS, focusing on implementing the Wishbone and UART concepts. The design has been verified using an HLS testbench, although there is room for improvement, which is not my current focus.
 
-Note: the output of UART is 10 bits, I made it on perpuse to verify the concept with testbench but it should be 8 bits.
+While I ensured thorough testing of the core functionality, not all edge cases have been covered.
+
+Key Notes:
+UART Output: The UART currently outputs 10 bits instead of the standard 8 bits. This was done intentionally to verify the concept in the testbench but should be adjusted to 8 bits in future iterations.
 
 
