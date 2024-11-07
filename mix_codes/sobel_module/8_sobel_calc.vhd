@@ -47,7 +47,23 @@ SIGNAL count : integer := 0;
 
 
 BEGIN 
+-- Sobel Operator Kernels
+--    | data0_i | data1_i | data2_i |
+--    | data3_i | data4_i | data5_i |
+--    | data6_i | data7_i | data8_i |
+-- Gx Kernel (Gradient in X Direction)
+-- | -1  0  1 |
+-- | -2  0  2 |
+-- | -1  0  1 |
 
+-- Gy Kernel (Gradient in Y Direction)
+-- |  1  2  1 |
+-- |  0  0  0 |
+-- | -1 -2 -1 |
+
+-- Note: 
+-- The Gx kernel is used to detect horizontal edges,
+-- while the Gy kernel is used to detect vertical edges.
 -- // process for the X AND Y section 
 
 xY_proc : PROCESS(clk) 
@@ -104,6 +120,8 @@ END PROCESS;
 
 g_sum_reg <= std_logic_vector(to_signed(g_sum, g_sum_reg'length));
 
+
+-- If the gradient magnitude is 60 or more, the output is set to x"FF" (255) white, it is Threshold 
 out_proc : PROCESS(clk) 
 BEGIN 
     IF rising_edge(clk) THEN 
@@ -112,7 +130,7 @@ BEGIN
             count <= 0;
             --done_o <= '0';
         else
-            IF (count < 3) THEN
+            IF (count < 3) THEN -- wait 3 clocks to send the output
                 grayscale_o <= g_sum_reg(7 DOWNTO 0) WHEN (unsigned(g_sum_reg) < 60) ELSE x"FF";
                 count <= count +1;
             else

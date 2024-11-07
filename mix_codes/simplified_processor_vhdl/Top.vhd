@@ -2,6 +2,7 @@
 -------------------------------------------------------
 ------------ Reference Concept @ Kumar Khandagle  -------------
 ------------ Coded by Taha Alars
+------------ VHDL 2008
 -------------------------------------------------------
 -- Simple Processor, consider all the inputs are ports for simpilicity purposes in real immpememntation will be buses with memory
 -- Register bit layout:
