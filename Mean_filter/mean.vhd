@@ -3,7 +3,7 @@
 
 -- Taha Alars
 
--- it should be much simpler than this but I wanted to use the inouts values as variable and the codes handle the count for us, 
+-- it should be much simpler than this but I wanted to use the inputs packages be a power of 2 and not fixed to a specific number and the codes handle the count for us, 
 -- by doing so, I had to deal with large latancy, it is about 10 clocks, sure, I could optimise it but I dont want to put more time in it.
 
 
@@ -181,17 +181,12 @@ end process;
     BEGIN
         IF rst = '1' THEN
             current_state <= IDLE;
-        ELSIF rising_edge(clk) THEN
-            current_state <= next_state;
-        END IF;
-    END PROCESS;
-    operate_state_process : PROCESS (clk, rst)
-    BEGIN
-        IF rst = '1' THEN
             op_state <= operate;
         ELSIF rising_edge(clk) THEN
-            op_state <= send_state;
+            current_state <= next_state;
+             op_state <= send_state;
         END IF;
     END PROCESS;
+
 END Arch_mean_top;
 
