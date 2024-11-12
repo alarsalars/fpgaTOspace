@@ -47,9 +47,6 @@ SIGNAL en_i         : std_logic;
 SIGNAL median       : std_logic_vector(7 DOWNTO 0);
 SIGNAL done_med     : std_logic;
 
-
-
-
 begin 
 
 
