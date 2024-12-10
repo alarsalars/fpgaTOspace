@@ -1,4 +1,6 @@
-# FFT "under implementation"
+# FFT 
+
+Steps for FFT implementation:
 
 1. Simple implementation in C
 2. Convert to HLS code in C++

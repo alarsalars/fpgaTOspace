@@ -1,21 +1,31 @@
 
+// Taha Alars
 
-
-#include "fft_new.h"  
+#include "fft.h"  
 #ifndef CMPLX
 #define CMPLX(x, y) ((x) + (y)*I)
 #endif
 
-void generate_data(float complex fftin_or[FFTSIZE]){
-        for (int k=0; k<FFTSIZE; k++){
-        fftin_or[k]   =(k*7/4)+(k*11/2)*I;
+//void generate_data(float complex fftin_or[FFTSIZE]){
+//        for (int k=0; k<FFTSIZE; k++){
+//        fftin_or[k]   =(k*7/4)+(k*11/2)*I;
+//    }
+//}
+
+
+void generate_data(float complex fftin_or[FFTSIZE]) {
+    srand(time(NULL));   
+
+    for (int k = 0; k < FFTSIZE; k++) {
+        float real_part = (float)(rand() % 2001) / 100.0f - 10.0f; // -10.0 to 10.0
+        float imag_part = (float)(rand() % 2001) / 100.0f - 10.0f;  
+        fftin_or[k] = real_part + imag_part * I;
     }
 }
 
+/// Cooley-Tukey Fast Fourier Transform algorithm
 
-
-
-// Cooley-Tukey
+// Bit-Reversal 
 void bit_reversal(float complex fftin_or[FFTSIZE],float complex fftin_re[FFTSIZE] ){
     uint16_t bit_count = (uint16_t)log2(FFTSIZE);
     value_loop : for (uint16_t i = 0; i < FFTSIZE; i ++){
@@ -31,7 +41,7 @@ void bit_reversal(float complex fftin_or[FFTSIZE],float complex fftin_re[FFTSIZE
      
 }
 
-
+// Twiddle factor
 void wfft_ini(float complex wfft[FFTSIZE/2]) {
     for (int i = 0; i < FFTSIZE / 2; i++) {
         wfft[i] = CMPLX(0.9998 * cos(-2 * M_PI * (float)i / FFTSIZE), 
@@ -46,24 +56,24 @@ void fft(float complex fft_input[FFTSIZE],float complex wfft[FFTSIZE], float com
     float complex temp_fft_upper;
     float complex butterfly_wfft = 0;
     int lower =0;
-    ////////////////////////////////
-    copy_fft_loop: for (int k=0; k < FFTSIZE;k++){
+    // copy input array
+    copy_array_loop: for (int k=0; k < FFTSIZE;k++){
         fft_output[k] = fft_input[k];
     }
-    ////////////////////////////////
+    // The first implementation loop which is for the stages no
     stages_loop: for (int stage = 1; stage < FFTSTAGES; stage++){
-        dft_points = 1 << stage;// 2*stages // Number of points per DFT stage
-        butterfly_w = dft_points >>1; // fft sub points/2 // Half points per DFT stage
-    ////////////////////////////////
-        butterfly_weight_loop: for (int i = 0; i < butterfly_w; i++){
-                                        butterfly_wfft = wfft[i * (FFTSIZE >> stage)]; // OR (1 << stage) *i
-    ////////////////////////////////                                    
-                                        fft_loop: for (int upper = i; upper < FFTSIZE; upper += dft_points){
-                                                            lower = upper + butterfly_w; 
-                                                            temp_fft_upper = fft_output[upper]; // old upper
-                                                            fft_output[upper] = temp_fft_upper + fft_output[lower]* butterfly_wfft;
-                                                            fft_output[lower] = temp_fft_upper - fft_output[lower]* butterfly_wfft;
-                                        }
+        dft_points = 1 << stage;// 2*stages ,  Number of points per DFT stage
+        butterfly_w = dft_points >>1; // fft sub points/2 ,  Half points per DFT stage
+    // Second loop for the Twiddle factor used
+    butterfly_weight_loop: for (int i = 0; i < butterfly_w; i++){
+            butterfly_wfft = wfft[i * (FFTSIZE >> stage)]; // OR (1 << stage) *i
+    //  third loop for calculate the fft output for each weight iteration  with butterfly                                 
+    fft_loop: for (int upper = i; upper < FFTSIZE; upper += dft_points){
+            lower = upper + butterfly_w; 
+            temp_fft_upper = fft_output[upper]; // old upper
+            fft_output[upper] = temp_fft_upper + fft_output[lower]* butterfly_wfft;
+            fft_output[lower] = temp_fft_upper - fft_output[lower]* butterfly_wfft;
+            }
         }
     }
 }

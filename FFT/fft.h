@@ -6,7 +6,9 @@
 #include <complex.h>
 #include <stdio.h>
 #include <stdint.h>
-#define FFTSIZE 8
+#include <stdlib.h>
+#include <time.h>
+#define FFTSIZE 2048
 #define FFTSTAGES ((int)(log2(FFTSIZE)))
 
 
