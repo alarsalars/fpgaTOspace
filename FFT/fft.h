@@ -1,18 +1,13 @@
 #ifndef FFT_H
 #define FFT_H 
 
-#define _USE_MATH_DEFINES   
+#define _USE_MATH_DEFINES  // Should be a preprocessor directive
 #include <math.h>
 #include <complex.h>
 #include <stdio.h>
 #include <stdint.h>
-#define FFTSIZE 1024
+#define FFTSIZE 8
 #define FFTSTAGES ((int)(log2(FFTSIZE)))
-
-
-
-
-
 
 
 #endif
